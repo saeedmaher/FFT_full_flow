@@ -1,0 +1,25 @@
+
+42. Printing statistics.
+
+=== DIF_R2SDF_top ===
+
+   Number of wires:               9295
+   Number of wire bits:           9818
+   Number of public wires:          62
+   Number of public wire bits:     561
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9773
+     $_ANDNOT_                    2904
+     $_AND_                        153
+     $_MUX_                        253
+     $_NAND_                       160
+     $_NOR_                       1076
+     $_NOT_                        479
+     $_ORNOT_                      211
+     $_OR_                        1047
+     $_XNOR_                       885
+     $_XOR_                       2193
+     sky130_fd_sc_hd__dfrtp_2      412
+
