@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Aug 15 03:48:38 2026
+# Process ID: 20484
+# Current directory: D:/fft_fpga/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log DIF_R2SDF_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DIF_R2SDF_top.tcl -notrace
+# Log file: D:/fft_fpga/project_1/project_1.runs/impl_1/DIF_R2SDF_top.vdi
+# Journal file: D:/fft_fpga/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DIF_R2SDF_top.tcl -notrace

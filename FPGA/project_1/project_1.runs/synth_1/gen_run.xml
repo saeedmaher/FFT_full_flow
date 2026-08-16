@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1786754856">
+  <File Type="PA-TCL" Name="DIF_R2SDF_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DIF_R2SDF_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DIF_R2SDF_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DIF_R2SDF_top.vds"/>
+  <File Type="RDS-UTIL" Name="DIF_R2SDF_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DIF_R2SDF_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DIF_R2SDF_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DIF_R2SDF_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DIF_R2SDF_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/design/BF2_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/BF2_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786468778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/BF3_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/BF3_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786468780"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/BF4_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/BF4_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786468784"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/CU_stage1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/CU_stage1.v"/>
+        <Attr Name="ImportTime" Val="1786467318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/CU_stage2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/CU_stage2.v"/>
+        <Attr Name="ImportTime" Val="1786469108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/CU_stage3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/CU_stage3.v"/>
+        <Attr Name="ImportTime" Val="1786469186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/CU_stage4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/CU_stage4.v"/>
+        <Attr Name="ImportTime" Val="1786535328"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/ShiftREG1_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/ShiftREG1_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786469172"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/ShiftREG2_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/ShiftREG2_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786469176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/ShiftREG4_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/ShiftREG4_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786469178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/ShiftREG8_input_MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/ShiftREG8_input_MUX.v"/>
+        <Attr Name="ImportTime" Val="1786469224"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/Twidle_factor_ROM_stage1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/Twidle_factor_ROM_stage1.v"/>
+        <Attr Name="ImportTime" Val="1786378946"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/Twidle_factor_ROM_stage2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/Twidle_factor_ROM_stage2.v"/>
+        <Attr Name="ImportTime" Val="1786468344"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/Twidle_factor_ROM_stage3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/Twidle_factor_ROM_stage3.v"/>
+        <Attr Name="ImportTime" Val="1786468358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/butterfly_st1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/butterfly_st1.v"/>
+        <Attr Name="ImportTime" Val="1786465238"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/butterfly_st2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/butterfly_st2.v"/>
+        <Attr Name="ImportTime" Val="1786465912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/butterfly_st3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/butterfly_st3.v"/>
+        <Attr Name="ImportTime" Val="1786465906"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/butterfly_st4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/butterfly_st4.v"/>
+        <Attr Name="ImportTime" Val="1786466056"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/shift_register_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/shift_register_1.v"/>
+        <Attr Name="ImportTime" Val="1786461312"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/shift_register_2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/shift_register_2.v"/>
+        <Attr Name="ImportTime" Val="1786467538"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/shift_register_4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/shift_register_4.v"/>
+        <Attr Name="ImportTime" Val="1786467508"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/shift_register_8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/shift_register_8.v"/>
+        <Attr Name="ImportTime" Val="1786467574"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/stage1_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/stage1_top.v"/>
+        <Attr Name="ImportTime" Val="1786605804"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/stage2_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/stage2_top.v"/>
+        <Attr Name="ImportTime" Val="1786468218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/stage3_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/stage3_top.v"/>
+        <Attr Name="ImportTime" Val="1786468052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/stage4_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/stage4_top.v"/>
+        <Attr Name="ImportTime" Val="1786535062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../design/top.v"/>
+        <Attr Name="ImportTime" Val="1786535122"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DIF_R2SDF_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/fft_fpga/FFT_Basys3_full_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FFT_Basys3_full_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1786630730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

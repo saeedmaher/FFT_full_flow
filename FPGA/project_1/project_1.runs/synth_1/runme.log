@@ -1,0 +1,611 @@
+
+*** Running vivado
+    with args -log DIF_R2SDF_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DIF_R2SDF_top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source DIF_R2SDF_top.tcl -notrace
+Command: synth_design -top DIF_R2SDF_top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 376.875 ; gain = 98.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DIF_R2SDF_top' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/top.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DIF_R2SDF_Stage1' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage1_top.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DIF_Stage1_CU' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Stage1_CU' (1#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle_ROM_stage1' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage1.v:1]
+INFO: [Synth 8-226] default block is never used [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle_ROM_stage1' (2#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ShiftREG8_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG8_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ShiftREG8_input_MUX' (3#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG8_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_register_8' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_8.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_8' (4#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_Butterfly_St1' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st1.v:1]
+	Parameter IN_WIDTH bound to: 12 - type: integer 
+	Parameter W_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Butterfly_St1' (5#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_R2SDF_Stage1' (6#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage1_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_R2SDF_Stage2' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage2_top.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DIF_Stage2_CU' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Stage2_CU' (7#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle_ROM_Stage2' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage2.v:1]
+INFO: [Synth 8-226] default block is never used [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage2.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle_ROM_Stage2' (8#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ShiftREG4_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG4_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ShiftREG4_input_MUX' (9#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG4_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_register_4' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_4.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_4' (10#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_Butterfly_St2' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st2.v:1]
+	Parameter IN_WIDTH bound to: 12 - type: integer 
+	Parameter W_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Butterfly_St2' (11#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BF2_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF2_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BF2_input_MUX' (12#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF2_input_MUX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_R2SDF_Stage2' (13#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage2_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_R2SDF_Stage3' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage3_top.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DIF_Stage3_CU' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Stage3_CU' (14#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle_ROM_Stage3' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage3.v:1]
+INFO: [Synth 8-226] default block is never used [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle_ROM_Stage3' (15#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/Twidle_factor_ROM_stage3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BF3_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF3_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BF3_input_MUX' (16#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF3_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ShiftREG2_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG2_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ShiftREG2_input_MUX' (17#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG2_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_register_2' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_2.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_2' (18#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_Butterfly_St3' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st3.v:1]
+	Parameter IN_WIDTH bound to: 12 - type: integer 
+	Parameter W_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Butterfly_St3' (19#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_R2SDF_Stage3' (20#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage3_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_R2SDF_Stage4' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage4_top.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DIF_Stage4_CU' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Stage4_CU' (21#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BF4_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF4_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BF4_input_MUX' (22#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/BF4_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ShiftREG1_input_MUX' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG1_input_MUX.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ShiftREG1_input_MUX' (23#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/ShiftREG1_input_MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_register_1' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_1.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register_1' (24#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/shift_register_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIF_Butterfly_St4' [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st4.v:1]
+	Parameter IN_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DIF_Butterfly_St4' (25#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/butterfly_st4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_R2SDF_Stage4' (26#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/stage4_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DIF_R2SDF_top' (27#1) [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/top.v:1]
+WARNING: [Synth 8-3331] design shift_register_2 has unconnected port stage2_valid
+WARNING: [Synth 8-3331] design shift_register_8 has unconnected port fft_in_valid
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.160 ; gain = 153.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.160 ; gain = 153.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 432.160 ; gain = 153.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/fft_fpga/project_1/project_1.srcs/constrs_1/imports/fft_fpga/FFT_Basys3_full_constraints.xdc]
+Finished Parsing XDC File [D:/fft_fpga/project_1/project_1.srcs/constrs_1/imports/fft_fpga/FFT_Basys3_full_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/fft_fpga/project_1/project_1.srcs/constrs_1/imports/fft_fpga/FFT_Basys3_full_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DIF_R2SDF_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DIF_R2SDF_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 790.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 790.777 ; gain = 512.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 790.777 ; gain = 512.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.777 ; gain = 512.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 790.777 ; gain = 512.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 4     
+	   3 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 32    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 23    
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DIF_R2SDF_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module DIF_Stage1_CU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Twiddle_ROM_stage1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+Module ShiftREG8_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module shift_register_8 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 16    
+Module DIF_Butterfly_St1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 2     
+Module DIF_R2SDF_Stage1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module DIF_Stage2_CU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Twiddle_ROM_Stage2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+Module ShiftREG4_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+Module shift_register_4 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 8     
+Module DIF_Butterfly_St2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
+Module BF2_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module DIF_Stage3_CU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+Module Twiddle_ROM_Stage3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module BF3_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module ShiftREG2_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+Module shift_register_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+Module DIF_Butterfly_St3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
+Module DIF_Stage4_CU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BF4_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module ShiftREG1_input_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+Module shift_register_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+Module DIF_Butterfly_St4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP STAGE1/BUTTERFLY/mult_re_re, operation Mode is: A*B.
+DSP Report: operator STAGE1/BUTTERFLY/mult_re_re is absorbed into DSP STAGE1/BUTTERFLY/mult_re_re.
+DSP Report: Generating DSP STAGE1/BUTTERFLY/mult_re_im, operation Mode is: A*B.
+DSP Report: operator STAGE1/BUTTERFLY/mult_re_im is absorbed into DSP STAGE1/BUTTERFLY/mult_re_im.
+DSP Report: Generating DSP STAGE1/BUTTERFLY/mult_result_im, operation Mode is: C+A*B.
+DSP Report: operator STAGE1/BUTTERFLY/mult_result_im is absorbed into DSP STAGE1/BUTTERFLY/mult_result_im.
+DSP Report: operator STAGE1/BUTTERFLY/mult_im_re is absorbed into DSP STAGE1/BUTTERFLY/mult_result_im.
+DSP Report: Generating DSP STAGE1/BUTTERFLY/mult_result_re, operation Mode is: C-A*B.
+DSP Report: operator STAGE1/BUTTERFLY/mult_result_re is absorbed into DSP STAGE1/BUTTERFLY/mult_result_re.
+DSP Report: operator STAGE1/BUTTERFLY/mult_im_im is absorbed into DSP STAGE1/BUTTERFLY/mult_result_re.
+DSP Report: Generating DSP STAGE2/BUTTERFLY2/mult_re_re, operation Mode is: A*B.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_re_re is absorbed into DSP STAGE2/BUTTERFLY2/mult_re_re.
+DSP Report: Generating DSP STAGE2/BUTTERFLY2/mult_re_im, operation Mode is: A*B.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_re_im is absorbed into DSP STAGE2/BUTTERFLY2/mult_re_im.
+DSP Report: Generating DSP STAGE2/BUTTERFLY2/mult_result_im, operation Mode is: C+A*B.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_result_im is absorbed into DSP STAGE2/BUTTERFLY2/mult_result_im.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_im_re is absorbed into DSP STAGE2/BUTTERFLY2/mult_result_im.
+DSP Report: Generating DSP STAGE2/BUTTERFLY2/mult_result_re, operation Mode is: C-A*B.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_result_re is absorbed into DSP STAGE2/BUTTERFLY2/mult_result_re.
+DSP Report: operator STAGE2/BUTTERFLY2/mult_im_im is absorbed into DSP STAGE2/BUTTERFLY2/mult_result_re.
+DSP Report: Generating DSP STAGE3/BUTTERFLY3/mult_re_re, operation Mode is: A*B.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_re_re is absorbed into DSP STAGE3/BUTTERFLY3/mult_re_re.
+DSP Report: Generating DSP STAGE3/BUTTERFLY3/mult_re_im, operation Mode is: A*B.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_re_im is absorbed into DSP STAGE3/BUTTERFLY3/mult_re_im.
+DSP Report: Generating DSP STAGE3/BUTTERFLY3/mult_result_im, operation Mode is: C+A*B.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_result_im is absorbed into DSP STAGE3/BUTTERFLY3/mult_result_im.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_im_re is absorbed into DSP STAGE3/BUTTERFLY3/mult_result_im.
+DSP Report: Generating DSP STAGE3/BUTTERFLY3/mult_result_re, operation Mode is: C-A*B.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_result_re is absorbed into DSP STAGE3/BUTTERFLY3/mult_result_re.
+DSP Report: operator STAGE3/BUTTERFLY3/mult_im_im is absorbed into DSP STAGE3/BUTTERFLY3/mult_result_re.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 790.777 ; gain = 512.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DIF_Butterfly_St1 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St1 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St1 | C+A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St1 | C-A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St2 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St2 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St2 | C+A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St2 | C-A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St3 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St3 | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St3 | C+A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DIF_Butterfly_St3 | C-A*B       | 12     | 12     | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:106]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:106]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 831.500 ; gain = 552.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 846.043 ; gain = 567.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage2.v:77]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:106]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/fft_fpga/project_1/project_1.srcs/sources_1/imports/design/CU_stage3.v:106]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|DIF_R2SDF_top | STAGE1/SR8/delay_im_reg[7][11] | 8      | 12    | YES          | NO                 | YES               | 12     | 0       | 
+|DIF_R2SDF_top | STAGE1/SR8/delay_re_reg[7][11] | 8      | 12    | YES          | NO                 | YES               | 12     | 0       | 
+|DIF_R2SDF_top | STAGE2/SR4/delay_im_reg[3][11] | 4      | 12    | YES          | NO                 | YES               | 12     | 0       | 
+|DIF_R2SDF_top | STAGE2/SR4/delay_re_reg[3][11] | 4      | 12    | YES          | NO                 | YES               | 12     | 0       | 
++--------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    56|
+|3     |DSP48E1   |     6|
+|4     |DSP48E1_1 |     6|
+|5     |LUT1      |    13|
+|6     |LUT2      |   110|
+|7     |LUT3      |    68|
+|8     |LUT4      |   149|
+|9     |LUT5      |    76|
+|10    |SRL16E    |    48|
+|11    |FDCE      |   179|
+|12    |FDRE      |    48|
+|13    |IBUF      |    27|
+|14    |OBUF      |    25|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |   812|
+|2     |  STAGE1       |DIF_R2SDF_Stage1    |   279|
+|3     |    BUTTERFLY  |DIF_Butterfly_St1   |    20|
+|4     |    CU         |DIF_Stage1_CU       |    20|
+|5     |    ROM        |Twiddle_ROM_stage1  |    12|
+|6     |    SR8        |shift_register_8    |   178|
+|7     |    SR8_MUX    |ShiftREG8_input_MUX |    24|
+|8     |  STAGE2       |DIF_R2SDF_Stage2    |   202|
+|9     |    BUTTERFLY2 |DIF_Butterfly_St2   |    40|
+|10    |    CU         |DIF_Stage2_CU       |    18|
+|11    |    SR4        |shift_register_4    |   120|
+|12    |    SR4_MUX    |ShiftREG4_input_MUX |    24|
+|13    |  STAGE3       |DIF_R2SDF_Stage3    |   150|
+|14    |    BUTTERFLY3 |DIF_Butterfly_St3   |    40|
+|15    |    CU         |DIF_Stage3_CU       |    14|
+|16    |    SR2        |shift_register_2    |    72|
+|17    |    SR2_MUX    |ShiftREG2_input_MUX |    24|
+|18    |  STAGE4       |DIF_R2SDF_Stage4    |   128|
+|19    |    BUTTERFLY4 |DIF_Butterfly_St4   |    40|
+|20    |    CU         |DIF_Stage4_CU       |    12|
+|21    |    SR1        |shift_register_1    |    52|
+|22    |    SR1_MUX    |ShiftREG1_input_MUX |    24|
++------+---------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 856.332 ; gain = 219.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 856.332 ; gain = 577.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 95 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 856.332 ; gain = 590.504
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/fft_fpga/project_1/project_1.runs/synth_1/DIF_R2SDF_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DIF_R2SDF_top_utilization_synth.rpt -pb DIF_R2SDF_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 856.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 15 03:48:13 2026...
