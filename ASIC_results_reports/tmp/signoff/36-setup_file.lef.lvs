@@ -1,0 +1,1 @@
+lvs {/home/opentools/OpenLane/designs/fft/runs/opttime1/results/signoff/DIF_R2SDF_top.spice DIF_R2SDF_top} {/home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/signoff/33-powered_netlist.v DIF_R2SDF_top} /home/opentools/OpenLane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /home/opentools/OpenLane/designs/fft/runs/opttime1/logs/signoff/36-DIF_R2SDF_top.lef.log -json

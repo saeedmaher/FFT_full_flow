@@ -1,0 +1,1252 @@
+OpenROAD v2.0-4194-g9d55eaa0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.def
+[INFO ODB-0128] Design: DIF_R2SDF_top
+[INFO ODB-0130]     Created 54 pins.
+[INFO ODB-0131]     Created 62585 components and 288144 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 236246 connections.
+[INFO ODB-0133]     Created 13627 nets and 51898 connections.
+[INFO ODB-0134] Finished DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.def
+Net clk
+  clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+    met5
+    PAR:  793.19* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.BUTTERFLY.a_im\[10\]
+  _14124_/A (sky130_fd_sc_hd__clkbuf_2)
+    met4
+    PAR:  405.62* Ratio:  400.00 (S.Area)
+
+  _14153_/B (sky130_fd_sc_hd__or2_4)
+    met4
+    PAR:  405.62* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.delay_im\[0\]\[11\]
+  _26079_/D (sky130_fd_sc_hd__dfrtp_1)
+    met3
+    PAR: 1734.49* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.delay_im\[6\]\[2\]
+  _26142_/D (sky130_fd_sc_hd__dfrtp_1)
+    met3
+    PAR: 1110.52* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[10\]
+  _26066_/D (sky130_fd_sc_hd__dfrtp_1)
+    met4
+    PAR:  850.70* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[1\]
+  _26469_/D (sky130_fd_sc_hd__dfrtp_1)
+    met5
+    PAR: 4318.28* Ratio: 2609.67 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[3\]
+  _26471_/D (sky130_fd_sc_hd__dfrtp_1)
+    met4
+    PAR: 4297.71* Ratio: 2610.29 (S.Area)
+
+    met3
+    PAR: 1518.37* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[4\]
+  _26472_/D (sky130_fd_sc_hd__dfrtp_1)
+    met3
+    PAR: 2982.28* Ratio: 2609.34 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[5\]
+  _26473_/D (sky130_fd_sc_hd__dfrtp_1)
+    met3
+    PAR:  806.51* Ratio:  400.00 (S.Area)
+
+    met2
+    PAR: 1508.67* Ratio:  400.00 (S.Area)
+
+
+Net STAGE1.SR8.din_im\[9\]
+  _26065_/D (sky130_fd_sc_hd__dfrtp_4)
+    met4
+    PAR: 3089.83* Ratio: 2610.10 (S.Area)
+
+
+Net STAGE2.SR4.din_re\[10\]
+  _26191_/D (sky130_fd_sc_hd__dfrtp_1)
+    met4
+    PAR: 2688.65* Ratio:  400.00 (S.Area)
+
+
+Net STAGE2.SR4.din_re\[4\]
+  _26185_/D (sky130_fd_sc_hd__dfrtp_1)
+    met4
+    PAR: 2727.17* Ratio: 2609.33 (S.Area)
+
+
+Net _00086_
+  _22828_/A (sky130_fd_sc_hd__buf_2)
+  _22660_/A2 (sky130_fd_sc_hd__o31a_1)
+    met3
+    PAR:  567.80* Ratio:  400.00 (S.Area)
+
+  _24232_/D (sky130_fd_sc_hd__or4_1)
+  _24605_/A2 (sky130_fd_sc_hd__o21ai_1)
+  _24604_/B (sky130_fd_sc_hd__or3_1)
+
+Net _00416_
+  _24123_/B1 (sky130_fd_sc_hd__o211ai_4)
+  _24469_/B1 (sky130_fd_sc_hd__o211ai_1)
+  _24353_/C1 (sky130_fd_sc_hd__o221ai_4)
+  _23693_/B1 (sky130_fd_sc_hd__o32a_2)
+    met4
+    PAR:  572.07* Ratio:  400.00 (S.Area)
+
+  _22964_/A (sky130_fd_sc_hd__and3_1)
+    met4
+    PAR:  572.07* Ratio:  400.00 (S.Area)
+
+
+Net _00713_
+  _23709_/C (sky130_fd_sc_hd__or4_2)
+    met3
+    PAR:  666.55* Ratio:  400.00 (S.Area)
+
+  _23234_/B1 (sky130_fd_sc_hd__a21oi_2)
+    met3
+    PAR:  666.55* Ratio:  400.00 (S.Area)
+
+
+Net _00906_
+  _23412_/A2 (sky130_fd_sc_hd__o211a_1)
+    met3
+    PAR:  673.05* Ratio:  400.00 (S.Area)
+
+  _23413_/C1 (sky130_fd_sc_hd__o221a_1)
+
+Net _01252_
+  _23726_/A3 (sky130_fd_sc_hd__a31o_1)
+    met3
+    PAR:  895.68* Ratio:  400.00 (S.Area)
+
+
+Net _01353_
+  _15098_/A (sky130_fd_sc_hd__nor3_2)
+  _13904_/A (sky130_fd_sc_hd__clkbuf_4)
+  _17622_/B1 (sky130_fd_sc_hd__a2bb2o_1)
+    met3
+    PAR:  501.98* Ratio:  400.00 (S.Area)
+
+  _13746_/A (sky130_fd_sc_hd__buf_2)
+  _13764_/A (sky130_fd_sc_hd__buf_2)
+
+Net _01545_
+  _23994_/A0 (sky130_fd_sc_hd__mux2_1)
+    met5
+    PAR: 4455.28* Ratio: 2610.16 (S.Area)
+
+
+Net _01673_
+  _24110_/A0 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 2720.44* Ratio: 2610.32 (S.Area)
+
+
+Net _02044_
+  _24453_/A2 (sky130_fd_sc_hd__a21oi_1)
+    met3
+    PAR:  677.18* Ratio:  400.00 (S.Area)
+
+
+Net _02770_
+  _25126_/A0 (sky130_fd_sc_hd__mux2_1)
+    met5
+    PAR: 2703.42* Ratio: 2609.33 (S.Area)
+
+
+Net _03283_
+  _15370_/B1 (sky130_fd_sc_hd__o311a_1)
+    met2
+    PAR:  418.76* Ratio:  400.00 (S.Area)
+
+  _13925_/C1 (sky130_fd_sc_hd__o2111ai_4)
+
+Net _03539_
+  _25862_/A (sky130_fd_sc_hd__clkbuf_1)
+    met2
+    PAR:  646.64* Ratio:  400.00 (S.Area)
+
+
+Net _03560_
+  _25885_/A (sky130_fd_sc_hd__clkbuf_1)
+    met4
+    PAR: 3566.83* Ratio:  400.00 (S.Area)
+
+
+Net _03565_
+  _25890_/A (sky130_fd_sc_hd__clkbuf_1)
+    met4
+    PAR: 3338.51* Ratio:  400.00 (S.Area)
+
+    met3
+    PAR: 1130.11* Ratio:  400.00 (S.Area)
+
+
+Net _03569_
+  _25895_/A (sky130_fd_sc_hd__clkbuf_1)
+    met4
+    PAR: 3460.60* Ratio: 2610.36 (S.Area)
+
+    met3
+    PAR:  692.69* Ratio:  400.00 (S.Area)
+
+
+Net _03592_
+  _25921_/A (sky130_fd_sc_hd__clkbuf_1)
+    met4
+    PAR: 3658.95* Ratio: 2609.67 (S.Area)
+
+
+Net _03601_
+  _25931_/A (sky130_fd_sc_hd__clkbuf_1)
+    met3
+    PAR: 3797.13* Ratio: 2610.36 (S.Area)
+
+
+Net _03628_
+  _25961_/A (sky130_fd_sc_hd__clkbuf_1)
+    met2
+    PAR: 1369.29* Ratio:  400.00 (S.Area)
+
+
+Net _03633_
+  _26027_/S (sky130_fd_sc_hd__mux2_1)
+  _26031_/S (sky130_fd_sc_hd__mux2_1)
+  _26029_/S (sky130_fd_sc_hd__mux2_1)
+  _25968_/A (sky130_fd_sc_hd__buf_2)
+    met3
+    PAR:  555.18* Ratio:  400.00 (S.Area)
+
+  _26033_/S (sky130_fd_sc_hd__mux2_1)
+
+Net _03691_
+  _14569_/A (sky130_fd_sc_hd__clkbuf_4)
+  _18189_/A2 (sky130_fd_sc_hd__o211a_1)
+  _17280_/A3 (sky130_fd_sc_hd__a31o_1)
+  _13971_/A2 (sky130_fd_sc_hd__a31o_2)
+    met3
+    PAR:  445.87* Ratio:  400.00 (S.Area)
+
+  _16909_/A3 (sky130_fd_sc_hd__a31o_1)
+
+Net _04132_
+  _18430_/A2 (sky130_fd_sc_hd__o31a_1)
+  _18589_/A2 (sky130_fd_sc_hd__o311a_2)
+    met3
+    PAR:  646.54* Ratio:  400.00 (S.Area)
+
+  _16085_/A1 (sky130_fd_sc_hd__o31a_1)
+  _14409_/B1 (sky130_fd_sc_hd__o32a_1)
+  _18832_/A1 (sky130_fd_sc_hd__o21ai_1)
+
+Net _04173_
+  _18898_/A1 (sky130_fd_sc_hd__o311a_1)
+    met3
+    PAR:  541.60* Ratio:  400.00 (S.Area)
+
+  _18896_/A (sky130_fd_sc_hd__or3_1)
+    met3
+    PAR:  541.60* Ratio:  400.00 (S.Area)
+
+  _16345_/A1 (sky130_fd_sc_hd__o31a_1)
+    met3
+    PAR:  541.60* Ratio:  400.00 (S.Area)
+
+  _14451_/A1 (sky130_fd_sc_hd__o41a_1)
+  _16417_/A (sky130_fd_sc_hd__clkbuf_4)
+    met3
+    PAR:  541.60* Ratio:  400.00 (S.Area)
+
+
+Net _04191_
+  _17071_/B (sky130_fd_sc_hd__and4_1)
+  _17050_/B (sky130_fd_sc_hd__nand4_2)
+  _16779_/D (sky130_fd_sc_hd__and4_4)
+  _14766_/A (sky130_fd_sc_hd__buf_2)
+    met3
+    PAR:  520.38* Ratio:  400.00 (S.Area)
+
+  _14469_/C (sky130_fd_sc_hd__and4_1)
+    met3
+    PAR:  520.38* Ratio:  400.00 (S.Area)
+
+
+Net _04296_
+  _18372_/A2 (sky130_fd_sc_hd__a31o_1)
+  _17402_/A2 (sky130_fd_sc_hd__o221ai_2)
+  _17209_/A3 (sky130_fd_sc_hd__o31a_1)
+  _17678_/A3 (sky130_fd_sc_hd__o32a_1)
+  _14573_/B2 (sky130_fd_sc_hd__o2bb2a_1)
+    met4
+    PAR: 1560.04* Ratio:  400.00 (S.Area)
+
+    met3
+    PAR:  467.98* Ratio:  400.00 (S.Area)
+
+
+Net _04326_
+  _14657_/A2 (sky130_fd_sc_hd__o22a_1)
+  _14622_/A (sky130_fd_sc_hd__nor4_1)
+  _14770_/A1 (sky130_fd_sc_hd__o22a_2)
+  _14603_/B1 (sky130_fd_sc_hd__o2bb2a_1)
+  _16787_/A2 (sky130_fd_sc_hd__o22ai_1)
+    met3
+    PAR:  775.31* Ratio:  400.00 (S.Area)
+
+
+Net _04359_
+  _17319_/A1 (sky130_fd_sc_hd__a311o_2)
+  _18624_/A2 (sky130_fd_sc_hd__o211ai_1)
+  _16003_/A (sky130_fd_sc_hd__clkbuf_2)
+    met3
+    PAR:  527.61* Ratio:  400.00 (S.Area)
+
+  _14636_/C1 (sky130_fd_sc_hd__o2111ai_4)
+  _16350_/A2 (sky130_fd_sc_hd__a32o_1)
+    met3
+    PAR:  527.61* Ratio:  400.00 (S.Area)
+
+
+Net _04374_
+  _18329_/A2 (sky130_fd_sc_hd__o211a_2)
+  _15457_/A1 (sky130_fd_sc_hd__a31oi_1)
+  _16311_/A (sky130_fd_sc_hd__and3_1)
+    met4
+    PAR:  479.97* Ratio:  400.00 (S.Area)
+
+  _14653_/A2 (sky130_fd_sc_hd__o32a_1)
+    met4
+    PAR:  479.97* Ratio:  400.00 (S.Area)
+
+  _18293_/A2 (sky130_fd_sc_hd__o2111a_2)
+
+Net _04405_
+  _14686_/A2 (sky130_fd_sc_hd__a211o_1)
+  _14690_/A2 (sky130_fd_sc_hd__a21o_1)
+    met1
+    PAR:  578.98* Ratio:  400.00 (S.Area)
+
+
+Net _04462_
+  _26004_/A2_N (sky130_fd_sc_hd__a2bb2o_1)
+    met2
+    PAR:  731.17* Ratio:  400.00 (S.Area)
+
+  _15227_/A1 (sky130_fd_sc_hd__a22o_4)
+  _15000_/A1 (sky130_fd_sc_hd__a22o_4)
+  _18549_/B2 (sky130_fd_sc_hd__a2bb2o_1)
+  _17892_/B2 (sky130_fd_sc_hd__a2bb2o_1)
+
+Net _04527_
+  _17954_/A3 (sky130_fd_sc_hd__o32a_1)
+  _17122_/A1 (sky130_fd_sc_hd__o32a_1)
+  _16781_/A1 (sky130_fd_sc_hd__o31a_2)
+  _17981_/A1 (sky130_fd_sc_hd__o21ai_1)
+  _14805_/A1 (sky130_fd_sc_hd__o31a_1)
+    met2
+    PAR:  478.77* Ratio:  400.00 (S.Area)
+
+
+Net _04567_
+  _14863_/A (sky130_fd_sc_hd__nor2_1)
+    met3
+    PAR:  527.78* Ratio:  400.00 (S.Area)
+
+  _14864_/B (sky130_fd_sc_hd__and2_1)
+    met3
+    PAR:  527.78* Ratio:  400.00 (S.Area)
+
+
+Net _04641_
+  _15510_/A (sky130_fd_sc_hd__buf_2)
+  _14919_/B1 (sky130_fd_sc_hd__a31o_2)
+  _15159_/A (sky130_fd_sc_hd__buf_2)
+    met1
+    PAR:  410.40* Ratio:  400.00 (S.Area)
+
+
+Net _04692_
+  _17444_/A3 (sky130_fd_sc_hd__a31oi_4)
+  _17319_/A3 (sky130_fd_sc_hd__a311o_2)
+  _17243_/B1 (sky130_fd_sc_hd__o221a_1)
+  _14975_/C (sky130_fd_sc_hd__or4_2)
+    met3
+    PAR: 1045.22* Ratio:  400.00 (S.Area)
+
+
+Net _04695_
+  _15828_/A2 (sky130_fd_sc_hd__o31a_1)
+  _17433_/A2 (sky130_fd_sc_hd__a311o_1)
+    met3
+    PAR: 1068.35* Ratio:  400.00 (S.Area)
+
+  _17434_/B (sky130_fd_sc_hd__and3_1)
+    met3
+    PAR: 1068.35* Ratio:  400.00 (S.Area)
+
+  _14973_/A2 (sky130_fd_sc_hd__a311o_1)
+  _15231_/A3 (sky130_fd_sc_hd__a41o_1)
+
+Net _04835_
+  _16020_/A (sky130_fd_sc_hd__nand2_2)
+  _15362_/A (sky130_fd_sc_hd__clkbuf_2)
+  _15114_/B1 (sky130_fd_sc_hd__o21ai_2)
+  _15116_/C (sky130_fd_sc_hd__and4_1)
+    met2
+    PAR: 1009.61* Ratio:  400.00 (S.Area)
+
+
+Net _05187_
+  _17734_/C (sky130_fd_sc_hd__nand4_1)
+  _15468_/A (sky130_fd_sc_hd__clkbuf_4)
+  _17736_/A1 (sky130_fd_sc_hd__a31oi_4)
+  _17592_/C (sky130_fd_sc_hd__and4_1)
+  _15472_/A (sky130_fd_sc_hd__buf_2)
+    met2
+    PAR:  982.73* Ratio:  400.00 (S.Area)
+
+
+Net _05217_
+  _15499_/A3 (sky130_fd_sc_hd__a32o_1)
+  _16209_/A (sky130_fd_sc_hd__buf_2)
+  _15728_/A3 (sky130_fd_sc_hd__a32o_1)
+  _15765_/A1 (sky130_fd_sc_hd__o311a_1)
+    met3
+    PAR:  524.87* Ratio:  400.00 (S.Area)
+
+  _17167_/A3 (sky130_fd_sc_hd__a32o_4)
+
+Net _05267_
+  _16407_/D (sky130_fd_sc_hd__and4b_2)
+    met3
+    PAR:  607.13* Ratio:  400.00 (S.Area)
+
+  _15751_/A1 (sky130_fd_sc_hd__o22ai_2)
+  _15578_/A1 (sky130_fd_sc_hd__o21ai_1)
+  _15570_/A1 (sky130_fd_sc_hd__o211ai_2)
+  _15574_/A2 (sky130_fd_sc_hd__o21ai_1)
+
+Net _05509_
+  _16252_/C (sky130_fd_sc_hd__or4b_2)
+    met3
+    PAR: 1037.08* Ratio:  400.00 (S.Area)
+
+  _15791_/A2 (sky130_fd_sc_hd__a31o_1)
+    met3
+    PAR: 1037.08* Ratio:  400.00 (S.Area)
+
+  _18186_/B2 (sky130_fd_sc_hd__a32o_1)
+  _18047_/A2 (sky130_fd_sc_hd__a31o_1)
+  _16582_/B1 (sky130_fd_sc_hd__o2111ai_4)
+
+Net _05716_
+  _15999_/A0 (sky130_fd_sc_hd__mux2_2)
+    met4
+    PAR: 2838.18* Ratio: 2610.32 (S.Area)
+
+
+Net _05717_
+  _16000_/A (sky130_fd_sc_hd__clkbuf_1)
+    met1
+    PAR:  683.54* Ratio:  400.00 (S.Area)
+
+
+Net _05801_
+  _16086_/A2 (sky130_fd_sc_hd__a21oi_1)
+    met3
+    PAR: 1187.11* Ratio:  400.00 (S.Area)
+
+  _18624_/B1 (sky130_fd_sc_hd__o211ai_1)
+  _18625_/A2 (sky130_fd_sc_hd__a21o_1)
+  _16759_/A2 (sky130_fd_sc_hd__o221a_2)
+  _16830_/A2 (sky130_fd_sc_hd__o211a_2)
+
+Net _05989_
+  _12990_/A (sky130_fd_sc_hd__clkbuf_1)
+    met3
+    PAR: 2423.13* Ratio:  400.00 (S.Area)
+
+
+Net _06096_
+  _18262_/A1 (sky130_fd_sc_hd__a22o_1)
+    met3
+    PAR:  409.39* Ratio:  400.00 (S.Area)
+
+  _18788_/A1 (sky130_fd_sc_hd__a22o_1)
+    met3
+    PAR:  409.39* Ratio:  400.00 (S.Area)
+
+  _18964_/A1 (sky130_fd_sc_hd__a22o_1)
+    met3
+    PAR:  409.39* Ratio:  400.00 (S.Area)
+
+  _16152_/A1 (sky130_fd_sc_hd__o21ai_4)
+  _14737_/A2 (sky130_fd_sc_hd__a22o_2)
+
+Net _06296_
+  _17282_/D (sky130_fd_sc_hd__and4b_1)
+    met1
+    PAR:  766.58* Ratio:  400.00 (S.Area)
+
+  _16543_/A2 (sky130_fd_sc_hd__a21oi_2)
+
+Net _06304_
+  _16552_/A1 (sky130_fd_sc_hd__a21boi_1)
+  _16549_/C1 (sky130_fd_sc_hd__o211a_1)
+  _16556_/B1 (sky130_fd_sc_hd__o31a_2)
+    met1
+    PAR:  548.94* Ratio:  400.00 (S.Area)
+
+
+Net _06311_
+  _18973_/A1 (sky130_fd_sc_hd__o221a_1)
+    met2
+    PAR:  581.98* Ratio:  400.00 (S.Area)
+
+  _16590_/A1 (sky130_fd_sc_hd__a21o_1)
+  _17232_/C (sky130_fd_sc_hd__and3_1)
+  _26004_/B1 (sky130_fd_sc_hd__a2bb2o_1)
+    met2
+    PAR:  708.44* Ratio:  400.00 (S.Area)
+
+  _18825_/A1 (sky130_fd_sc_hd__o2111ai_4)
+
+Net _06522_
+  _13065_/B (sky130_fd_sc_hd__and4_2)
+    met3
+    PAR: 1184.71* Ratio:  400.00 (S.Area)
+
+  _14165_/A (sky130_fd_sc_hd__and4_2)
+    met3
+    PAR: 1184.71* Ratio:  400.00 (S.Area)
+
+  _14654_/A3 (sky130_fd_sc_hd__a31o_1)
+  _16850_/B1 (sky130_fd_sc_hd__o2111ai_1)
+  _14678_/B (sky130_fd_sc_hd__and3_1)
+
+Net _06642_
+  _16919_/A (sky130_fd_sc_hd__clkbuf_2)
+    met1
+    PAR:  441.30* Ratio:  400.00 (S.Area)
+
+  _16859_/A (sky130_fd_sc_hd__nand3_1)
+
+Net _06709_
+  _14164_/A (sky130_fd_sc_hd__buf_4)
+    met4
+    PAR:  615.35* Ratio:  400.00 (S.Area)
+
+  _14607_/A3 (sky130_fd_sc_hd__o311a_1)
+    met4
+    PAR:  615.35* Ratio:  400.00 (S.Area)
+
+  _18174_/A1 (sky130_fd_sc_hd__o22ai_4)
+  _16215_/A2 (sky130_fd_sc_hd__o221a_1)
+  _13056_/A (sky130_fd_sc_hd__buf_2)
+
+Net _06734_
+  _16945_/A1 (sky130_fd_sc_hd__o21ai_4)
+  _17157_/A1 (sky130_fd_sc_hd__a21oi_1)
+  _18495_/A1_N (sky130_fd_sc_hd__o2bb2ai_1)
+    met3
+    PAR: 1152.98* Ratio:  400.00 (S.Area)
+
+  _17150_/A1 (sky130_fd_sc_hd__a21o_1)
+  _16944_/C1 (sky130_fd_sc_hd__o211ai_2)
+
+Net _06894_
+  _17093_/A (sky130_fd_sc_hd__or4b_2)
+    met1
+    PAR:  604.89* Ratio:  400.00 (S.Area)
+
+
+Net _06927_
+  _17521_/A (sky130_fd_sc_hd__nand2_2)
+  _17116_/A (sky130_fd_sc_hd__buf_2)
+    met1
+    PAR:  450.55* Ratio:  400.00 (S.Area)
+
+
+Net _07082_
+  _17266_/A3 (sky130_fd_sc_hd__o31a_2)
+  _17273_/A (sky130_fd_sc_hd__clkbuf_2)
+  _17259_/A3 (sky130_fd_sc_hd__o311a_1)
+    met1
+    PAR:  434.48* Ratio:  400.00 (S.Area)
+
+
+Net _07719_
+  _16719_/B2 (sky130_fd_sc_hd__o2bb2ai_1)
+  _16630_/A2 (sky130_fd_sc_hd__o22a_1)
+  _13148_/A (sky130_fd_sc_hd__buf_2)
+  _13483_/B1 (sky130_fd_sc_hd__a211o_2)
+  _14601_/B1 (sky130_fd_sc_hd__a2111o_1)
+    met2
+    PAR:  410.13* Ratio:  400.00 (S.Area)
+
+
+Net _07774_
+  _17073_/A (sky130_fd_sc_hd__or4_1)
+  _15032_/A3 (sky130_fd_sc_hd__a311o_4)
+  _14378_/B1 (sky130_fd_sc_hd__a21oi_1)
+  _13166_/B1 (sky130_fd_sc_hd__o22a_1)
+  _13484_/B (sky130_fd_sc_hd__or3_2)
+    met2
+    PAR:  548.06* Ratio:  400.00 (S.Area)
+
+
+Net _08222_
+  _15316_/B2 (sky130_fd_sc_hd__a22o_1)
+  _16955_/A2 (sky130_fd_sc_hd__a211o_4)
+  _13194_/A (sky130_fd_sc_hd__buf_2)
+  _14788_/B (sky130_fd_sc_hd__or4_1)
+    met3
+    PAR:  974.90* Ratio:  400.00 (S.Area)
+
+  _16795_/B1 (sky130_fd_sc_hd__a211o_1)
+
+Net _08288_
+  _14567_/A (sky130_fd_sc_hd__buf_2)
+    met3
+    PAR: 1189.97* Ratio:  400.00 (S.Area)
+
+  _13200_/C1 (sky130_fd_sc_hd__a211o_1)
+  _14368_/A1 (sky130_fd_sc_hd__o22ai_4)
+  _13480_/B2 (sky130_fd_sc_hd__o22a_1)
+  _13484_/C (sky130_fd_sc_hd__or3_2)
+
+Net _08986_
+  _18562_/A (sky130_fd_sc_hd__nand3_1)
+  _15781_/B1 (sky130_fd_sc_hd__a32oi_4)
+  _13445_/A (sky130_fd_sc_hd__clkbuf_4)
+    met3
+    PAR:  665.33* Ratio:  400.00 (S.Area)
+
+  _13290_/C (sky130_fd_sc_hd__and4_1)
+    met3
+    PAR:  665.33* Ratio:  400.00 (S.Area)
+
+  _15522_/C (sky130_fd_sc_hd__and3_2)
+
+Net _09249_
+  _14563_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+    met3
+    PAR:  770.68* Ratio:  400.00 (S.Area)
+
+  _14465_/B1 (sky130_fd_sc_hd__a32o_1)
+  _17332_/D (sky130_fd_sc_hd__and4_1)
+  _14466_/B (sky130_fd_sc_hd__and4_2)
+  _13288_/A1 (sky130_fd_sc_hd__a22o_1)
+
+Net _09304_
+  _16216_/B (sky130_fd_sc_hd__nand4_2)
+  _16043_/B (sky130_fd_sc_hd__nand4_1)
+  _15958_/C (sky130_fd_sc_hd__nand4_2)
+  _16998_/A4 (sky130_fd_sc_hd__a41oi_4)
+  _13293_/A3 (sky130_fd_sc_hd__a31oi_1)
+    met3
+    PAR:  938.87* Ratio:  400.00 (S.Area)
+
+
+Net _09392_
+  _13971_/A1 (sky130_fd_sc_hd__a31o_2)
+  _13341_/A1 (sky130_fd_sc_hd__a31o_1)
+  _13505_/A3 (sky130_fd_sc_hd__a31o_1)
+  _18557_/B (sky130_fd_sc_hd__and3_1)
+    met3
+    PAR:  764.67* Ratio:  400.00 (S.Area)
+
+  _15257_/C (sky130_fd_sc_hd__nand4_1)
+    met3
+    PAR:  764.67* Ratio:  400.00 (S.Area)
+
+
+Net _09618_
+  _19584_/A (sky130_fd_sc_hd__and3_1)
+    met3
+    PAR:  482.70* Ratio:  400.00 (S.Area)
+
+  _24388_/A3 (sky130_fd_sc_hd__o31a_1)
+  _22515_/A2 (sky130_fd_sc_hd__o2111ai_4)
+  _23925_/A2 (sky130_fd_sc_hd__a32o_1)
+  _21155_/A (sky130_fd_sc_hd__buf_2)
+
+Net _09727_
+  _23451_/A1 (sky130_fd_sc_hd__a31o_2)
+    met4
+    PAR:  422.54* Ratio:  400.00 (S.Area)
+
+  _22137_/A1 (sky130_fd_sc_hd__a21o_1)
+    met4
+    PAR:  422.54* Ratio:  400.00 (S.Area)
+
+  _20721_/C (sky130_fd_sc_hd__nand4_4)
+  _20498_/A (sky130_fd_sc_hd__and3_1)
+  _19674_/A (sky130_fd_sc_hd__nand4_4)
+
+Net _09761_
+  _21076_/B (sky130_fd_sc_hd__or3_2)
+    met1
+    PAR:  700.11* Ratio:  400.00 (S.Area)
+
+  _22161_/A1 (sky130_fd_sc_hd__o311a_4)
+  _24388_/A1 (sky130_fd_sc_hd__o31a_1)
+  _22513_/A2 (sky130_fd_sc_hd__o31a_1)
+  _19711_/A2 (sky130_fd_sc_hd__o32a_1)
+
+Net _09766_
+  _17937_/B (sky130_fd_sc_hd__or4_1)
+    met2
+    PAR:  753.11* Ratio:  400.00 (S.Area)
+
+  _13336_/B (sky130_fd_sc_hd__and3_1)
+
+Net _09770_
+  _20508_/B (sky130_fd_sc_hd__and3_1)
+  _22389_/B (sky130_fd_sc_hd__or4_4)
+    met1
+    PAR:  526.91* Ratio:  400.00 (S.Area)
+
+  _21832_/D1 (sky130_fd_sc_hd__o2111ai_4)
+  _24023_/A1 (sky130_fd_sc_hd__o21ai_4)
+  _19711_/B2 (sky130_fd_sc_hd__o32a_1)
+
+Net _09791_
+  _19733_/B1 (sky130_fd_sc_hd__o221ai_1)
+  _22059_/A2 (sky130_fd_sc_hd__o311a_1)
+    met3
+    PAR: 1075.87* Ratio:  400.00 (S.Area)
+
+  _22358_/A2 (sky130_fd_sc_hd__o221ai_4)
+  _22567_/A2 (sky130_fd_sc_hd__o22ai_4)
+  _22564_/A (sky130_fd_sc_hd__buf_2)
+
+Net _09812_
+  _19749_/A (sky130_fd_sc_hd__clkbuf_4)
+    M4M5_PR
+    PAR:    6.01* Ratio:    6.00 (Area)
+
+  _24286_/A2 (sky130_fd_sc_hd__a21oi_2)
+  _24381_/A1 (sky130_fd_sc_hd__o21ai_4)
+  _21103_/A1 (sky130_fd_sc_hd__o211ai_1)
+  _21094_/A1 (sky130_fd_sc_hd__o2111ai_1)
+
+Net _09830_
+  _19772_/A2 (sky130_fd_sc_hd__o22a_2)
+    met4
+    PAR:  532.76* Ratio:  400.00 (S.Area)
+
+  _23750_/B1 (sky130_fd_sc_hd__a21oi_2)
+  _23757_/A2 (sky130_fd_sc_hd__o211ai_1)
+  _23766_/A2 (sky130_fd_sc_hd__o21ai_1)
+  _23046_/C1 (sky130_fd_sc_hd__o211ai_4)
+
+Net _09868_
+  _21171_/C (sky130_fd_sc_hd__nand4_1)
+    met3
+    PAR:  651.36* Ratio:  400.00 (S.Area)
+
+  _21170_/A1 (sky130_fd_sc_hd__a32o_1)
+    met3
+    PAR:  651.36* Ratio:  400.00 (S.Area)
+
+  _19800_/B2 (sky130_fd_sc_hd__a22o_1)
+    met3
+    PAR:  651.36* Ratio:  400.00 (S.Area)
+
+  _22808_/A1 (sky130_fd_sc_hd__o41a_1)
+  _23131_/A (sky130_fd_sc_hd__and3_1)
+
+Net _09931_
+  _14883_/A1 (sky130_fd_sc_hd__a31o_1)
+  _16857_/C (sky130_fd_sc_hd__and3_1)
+    met1
+    PAR:  473.06* Ratio:  400.00 (S.Area)
+
+  _13354_/B (sky130_fd_sc_hd__nand4_4)
+  _16565_/C (sky130_fd_sc_hd__and3_2)
+  _16602_/D (sky130_fd_sc_hd__and4b_1)
+
+Net _09974_
+  _19897_/A (sky130_fd_sc_hd__buf_4)
+  _20388_/B2 (sky130_fd_sc_hd__o32a_1)
+  _22148_/A (sky130_fd_sc_hd__or4_4)
+    met3
+    PAR:  409.67* Ratio:  400.00 (S.Area)
+
+  _21109_/A1 (sky130_fd_sc_hd__o31a_1)
+  _20036_/C1 (sky130_fd_sc_hd__a221o_4)
+
+Net _10109_
+  _20186_/A (sky130_fd_sc_hd__dlymetal6s2s_1)
+    met3
+    PAR:  557.98* Ratio:  400.00 (S.Area)
+
+  _20196_/A (sky130_fd_sc_hd__and2_1)
+    met3
+    PAR:  557.98* Ratio:  400.00 (S.Area)
+
+  _20032_/A1 (sky130_fd_sc_hd__a21oi_2)
+  _20039_/B1 (sky130_fd_sc_hd__o211ai_4)
+
+Net _10265_
+  _21070_/A1 (sky130_fd_sc_hd__a21oi_4)
+  _21635_/C (sky130_fd_sc_hd__and4_1)
+  _20179_/A1 (sky130_fd_sc_hd__a21o_1)
+  _24570_/C (sky130_fd_sc_hd__or4_1)
+    met3
+    PAR: 1521.67* Ratio:  400.00 (S.Area)
+
+  _20183_/B1 (sky130_fd_sc_hd__a31o_1)
+
+Net _10288_
+  _21755_/C (sky130_fd_sc_hd__and4_1)
+  _22511_/C (sky130_fd_sc_hd__and3_1)
+    met4
+    PAR:  925.60* Ratio:  400.00 (S.Area)
+
+  _20183_/A1 (sky130_fd_sc_hd__a31o_1)
+  _21252_/B1 (sky130_fd_sc_hd__a22o_2)
+  _21760_/B1 (sky130_fd_sc_hd__o2111ai_4)
+
+Net _10495_
+  _23318_/A3 (sky130_fd_sc_hd__o32a_1)
+    met1
+    PAR:  592.02* Ratio:  400.00 (S.Area)
+
+  _20370_/A3 (sky130_fd_sc_hd__o31a_1)
+  _20396_/A3 (sky130_fd_sc_hd__o311a_1)
+
+Net _10591_
+  _14604_/C (sky130_fd_sc_hd__and4_1)
+  _14531_/A1 (sky130_fd_sc_hd__a31o_1)
+  _13420_/A2 (sky130_fd_sc_hd__o41a_1)
+  _13974_/A (sky130_fd_sc_hd__buf_4)
+  _17270_/D (sky130_fd_sc_hd__and4_2)
+    met3
+    PAR:  414.37* Ratio:  400.00 (S.Area)
+
+
+Net _10702_
+  _20860_/A1 (sky130_fd_sc_hd__a41o_2)
+  _20561_/A1 (sky130_fd_sc_hd__a32o_1)
+  _21414_/A1 (sky130_fd_sc_hd__o31a_2)
+    met3
+    PAR:  620.63* Ratio:  400.00 (S.Area)
+
+  _22269_/D (sky130_fd_sc_hd__nand4_1)
+  _22267_/A2 (sky130_fd_sc_hd__a31o_1)
+
+Net _10704_
+  _20561_/A2 (sky130_fd_sc_hd__a32o_1)
+    met1
+    PAR:  576.52* Ratio:  400.00 (S.Area)
+
+  _20572_/A3 (sky130_fd_sc_hd__a32o_2)
+  _23369_/A1 (sky130_fd_sc_hd__o21ai_2)
+  _21926_/C1 (sky130_fd_sc_hd__a311o_4)
+  _23160_/A3 (sky130_fd_sc_hd__o41ai_4)
+
+Net _10757_
+  _20878_/A (sky130_fd_sc_hd__nand2_2)
+  _20608_/A (sky130_fd_sc_hd__and3_2)
+  _23598_/A2 (sky130_fd_sc_hd__o21ai_1)
+    met1
+    PAR:  523.80* Ratio:  400.00 (S.Area)
+
+  _20880_/A1 (sky130_fd_sc_hd__a31o_2)
+
+Net _10918_
+  _20831_/A2 (sky130_fd_sc_hd__a21o_1)
+  _20860_/A3 (sky130_fd_sc_hd__a41o_2)
+  _20755_/A (sky130_fd_sc_hd__buf_4)
+  _23142_/A (sky130_fd_sc_hd__and3_1)
+    met1
+    PAR: 1637.33* Ratio:  400.00 (S.Area)
+
+  _23143_/A1 (sky130_fd_sc_hd__a21oi_1)
+
+Net _11019_
+  _24871_/A1 (sky130_fd_sc_hd__a21oi_2)
+  _20847_/A2 (sky130_fd_sc_hd__a22o_1)
+    met3
+    PAR:  595.88* Ratio:  400.00 (S.Area)
+
+  _23926_/B (sky130_fd_sc_hd__and3_1)
+    met3
+    PAR:  595.88* Ratio:  400.00 (S.Area)
+
+  _23817_/A2 (sky130_fd_sc_hd__a31o_1)
+    met3
+    PAR:  595.88* Ratio:  400.00 (S.Area)
+
+
+Net _11070_
+  _20899_/A2 (sky130_fd_sc_hd__a21bo_1)
+    met1
+    PAR:  881.69* Ratio:  400.00 (S.Area)
+
+  _20898_/B1 (sky130_fd_sc_hd__a21o_1)
+  _20893_/C (sky130_fd_sc_hd__nand3_1)
+
+Net _11082_
+  _20904_/A (sky130_fd_sc_hd__clkbuf_2)
+    met3
+    PAR:  480.08* Ratio:  400.00 (S.Area)
+
+  _22148_/B (sky130_fd_sc_hd__or4_4)
+  _21990_/A1 (sky130_fd_sc_hd__o211ai_2)
+  _21760_/D1 (sky130_fd_sc_hd__o2111ai_4)
+  _24041_/A1 (sky130_fd_sc_hd__o41ai_2)
+
+Net _11134_
+  _20951_/C (sky130_fd_sc_hd__and3_1)
+    met1
+    PAR: 2122.28* Ratio:  400.00 (S.Area)
+
+  _24710_/B2 (sky130_fd_sc_hd__o32a_1)
+  _24628_/A2 (sky130_fd_sc_hd__a32o_1)
+  _24651_/C (sky130_fd_sc_hd__nand4_2)
+  _22968_/A1 (sky130_fd_sc_hd__a32o_1)
+
+Net _11154_
+  _20973_/A0 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3042.07* Ratio: 2610.16 (S.Area)
+
+
+Net _11359_
+  _23264_/A2 (sky130_fd_sc_hd__a31o_1)
+  _23173_/A2 (sky130_fd_sc_hd__a21oi_1)
+  _24559_/A1 (sky130_fd_sc_hd__o32a_1)
+  _21170_/A3 (sky130_fd_sc_hd__a32o_1)
+    met3
+    PAR:  955.29* Ratio:  400.00 (S.Area)
+
+  _24665_/A1 (sky130_fd_sc_hd__o31a_1)
+    met3
+    PAR:  573.55* Ratio:  400.00 (S.Area)
+
+
+Net _11363_
+  _24039_/A2 (sky130_fd_sc_hd__o211ai_1)
+  _24261_/B1 (sky130_fd_sc_hd__o211a_1)
+  _24118_/A2 (sky130_fd_sc_hd__o22ai_4)
+  _24115_/A2_N (sky130_fd_sc_hd__a2bb2oi_2)
+  _21166_/A2 (sky130_fd_sc_hd__a32o_1)
+    met3
+    PAR:  515.05* Ratio:  400.00 (S.Area)
+
+
+Net _11366_
+  _23448_/B (sky130_fd_sc_hd__and4_1)
+  _22864_/A (sky130_fd_sc_hd__clkbuf_2)
+  _21166_/B1 (sky130_fd_sc_hd__a32o_1)
+    met1
+    PAR:  446.05* Ratio:  400.00 (S.Area)
+
+  _21585_/A1 (sky130_fd_sc_hd__o2111ai_4)
+  _21962_/A1 (sky130_fd_sc_hd__o2111ai_2)
+
+Net _11439_
+  _21236_/A3 (sky130_fd_sc_hd__o311ai_1)
+    met1
+    PAR:  575.70* Ratio:  400.00 (S.Area)
+
+  _21248_/A2 (sky130_fd_sc_hd__o21ai_2)
+  _24170_/D (sky130_fd_sc_hd__or4_1)
+  _22566_/A (sky130_fd_sc_hd__buf_2)
+  _22359_/A2 (sky130_fd_sc_hd__o21ai_2)
+
+Net _11447_
+  _13490_/A (sky130_fd_sc_hd__or4bb_1)
+  _15230_/A1 (sky130_fd_sc_hd__o21ai_1)
+    met4
+    PAR:  520.61* Ratio:  400.00 (S.Area)
+
+  _13489_/A1_N (sky130_fd_sc_hd__a2bb2o_1)
+
+Net _11691_
+  _21459_/A0 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3810.60* Ratio: 2610.32 (S.Area)
+
+    met3
+    PAR:  437.73* Ratio:  400.00 (S.Area)
+
+
+Net _11929_
+  _21678_/A0 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3439.03* Ratio: 2610.16 (S.Area)
+
+    met3
+    PAR:  443.83* Ratio:  400.00 (S.Area)
+
+
+Net _12408_
+  _22114_/A0 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3599.29* Ratio: 2610.32 (S.Area)
+
+
+Net _12817_
+  _18144_/B2 (sky130_fd_sc_hd__o2bb2a_1)
+    met1
+    PAR:  512.50* Ratio:  400.00 (S.Area)
+
+  _15386_/A1 (sky130_fd_sc_hd__a31oi_4)
+  _14557_/D (sky130_fd_sc_hd__and4_1)
+  _15509_/A3 (sky130_fd_sc_hd__a41o_2)
+  _13613_/B2 (sky130_fd_sc_hd__a32o_1)
+
+Net _12904_
+  _16014_/B1 (sky130_fd_sc_hd__o221a_2)
+  _18329_/A1 (sky130_fd_sc_hd__o211a_2)
+  _17243_/A2 (sky130_fd_sc_hd__o221a_1)
+    met3
+    PAR:  419.11* Ratio:  400.00 (S.Area)
+
+  _13635_/B1 (sky130_fd_sc_hd__a221o_2)
+  _18166_/A1 (sky130_fd_sc_hd__o2111ai_2)
+
+Net net1
+  _25969_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3400.69* Ratio: 2609.60 (S.Area)
+
+
+Net net10
+  _25984_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3271.17* Ratio: 2609.67 (S.Area)
+
+
+Net net11
+  _25986_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3184.82* Ratio: 2609.28 (S.Area)
+
+
+Net net12
+  _25988_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 3982.15* Ratio: 2609.60 (S.Area)
+
+    met2
+    PAR:  940.11* Ratio:  400.00 (S.Area)
+
+
+Net net14
+  _26031_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 6394.60* Ratio: 2610.02 (S.Area)
+
+
+Net net16
+  _26012_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 4255.55* Ratio: 2609.33 (S.Area)
+
+
+Net net17
+  _26014_/A1 (sky130_fd_sc_hd__mux2_1)
+    met5
+    PAR: 3194.09* Ratio: 2609.60 (S.Area)
+
+
+Net net18
+  _26017_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 4773.64* Ratio: 2609.67 (S.Area)
+
+
+Net net2
+  _25991_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 4234.56* Ratio:  400.00 (S.Area)
+
+
+Net net20
+  _26021_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 3112.06* Ratio: 2609.33 (S.Area)
+
+
+Net net21
+  _26023_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 2889.83* Ratio: 2609.28 (S.Area)
+
+
+Net net23
+  _26027_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 3841.07* Ratio: 2609.60 (S.Area)
+
+    met3
+    PAR: 1693.60* Ratio:  400.00 (S.Area)
+
+
+Net net24
+  _26029_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 2948.25* Ratio: 2609.60 (S.Area)
+
+    met2
+    PAR: 1493.22* Ratio:  400.00 (S.Area)
+
+
+Net net25
+  _26180_/D (sky130_fd_sc_hd__dfrtp_1)
+    met3
+    PAR:  465.82* Ratio:  400.00 (S.Area)
+
+  _25967_/A (sky130_fd_sc_hd__clkbuf_4)
+    met3
+    PAR:  465.82* Ratio:  400.00 (S.Area)
+
+  _26016_/A (sky130_fd_sc_hd__buf_2)
+    met3
+    PAR:  465.82* Ratio:  400.00 (S.Area)
+
+  _25990_/A (sky130_fd_sc_hd__clkbuf_2)
+    met3
+    PAR:  465.82* Ratio:  400.00 (S.Area)
+
+  _25979_/A (sky130_fd_sc_hd__clkbuf_2)
+    met3
+    PAR:  465.82* Ratio:  400.00 (S.Area)
+
+
+Net net27
+  output27/A (sky130_fd_sc_hd__clkbuf_1)
+    met4
+    PAR: 3420.86* Ratio: 2609.70 (S.Area)
+
+
+Net net3
+  _25993_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 4039.17* Ratio: 2609.60 (S.Area)
+
+    met3
+    PAR: 2364.08* Ratio:  400.00 (S.Area)
+
+
+Net net30
+  output30/A (sky130_fd_sc_hd__clkbuf_1)
+    met5
+    PAR: 3014.47* Ratio: 2609.33 (S.Area)
+
+    met2
+    PAR:  422.14* Ratio:  400.00 (S.Area)
+
+
+Net net32
+  output32/A (sky130_fd_sc_hd__clkbuf_1)
+    met3
+    PAR: 3336.26* Ratio: 2609.60 (S.Area)
+
+
+Net net35
+  output35/A (sky130_fd_sc_hd__clkbuf_1)
+    met2
+    PAR: 1330.53* Ratio:  400.00 (S.Area)
+
+
+Net net4
+  _25971_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 2744.58* Ratio: 2610.02 (S.Area)
+
+    met2
+    PAR: 1089.78* Ratio:  400.00 (S.Area)
+
+
+Net net40
+  output40/A (sky130_fd_sc_hd__clkbuf_1)
+    met1
+    PAR:  643.36* Ratio:  400.00 (S.Area)
+
+
+Net net41
+  output41/A (sky130_fd_sc_hd__clkbuf_1)
+    met5
+    PAR: 4947.17* Ratio: 2609.67 (S.Area)
+
+
+Net net42
+  output42/A (sky130_fd_sc_hd__clkbuf_1)
+    met3
+    PAR: 1827.59* Ratio:  400.00 (S.Area)
+
+
+Net net44
+  output44/A (sky130_fd_sc_hd__clkbuf_1)
+    met1
+    PAR: 1601.06* Ratio:  400.00 (S.Area)
+
+
+Net net46
+  output46/A (sky130_fd_sc_hd__clkbuf_1)
+    met2
+    PAR: 1629.70* Ratio:  400.00 (S.Area)
+
+
+Net net5
+  _25973_/A1 (sky130_fd_sc_hd__mux2_1)
+    met3
+    PAR: 3764.75* Ratio: 2609.33 (S.Area)
+
+
+Net net6
+  _25975_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 4626.85* Ratio: 2609.67 (S.Area)
+
+
+Net net7
+  _25977_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 4861.55* Ratio: 2609.67 (S.Area)
+
+
+Net net8
+  _25980_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 2744.44* Ratio: 2609.67 (S.Area)
+
+
+Net net9
+  _25982_/A1 (sky130_fd_sc_hd__mux2_1)
+    met4
+    PAR: 5049.96* Ratio: 2609.67 (S.Area)
+
+    met3
+    PAR: 1838.11* Ratio:  400.00 (S.Area)
+
+
+[INFO ANT-0002] Found 139 net violations.
+[INFO ANT-0001] Found 169 pin violations.

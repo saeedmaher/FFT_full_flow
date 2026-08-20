@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 143186 145330
+string GDS_END 45793088
+string GDS_FILE /home/opentools/OpenLane/designs/fft/runs/opttime1/results/signoff/DIF_R2SDF_top.magic.gds
+string GDS_START 1833076
+<< end >>

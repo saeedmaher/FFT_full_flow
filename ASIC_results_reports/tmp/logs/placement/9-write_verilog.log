@@ -1,0 +1,15 @@
+OpenROAD v2.0-4194-g9d55eaa0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/placement/8-resizer.def
+[INFO ODB-0128] Design: DIF_R2SDF_top
+[INFO ODB-0130]     Created 54 pins.
+[INFO ODB-0131]     Created 21123 components and 122212 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 70398 connections.
+[INFO ODB-0133]     Created 13585 nets and 51814 connections.
+[INFO ODB-0134] Finished DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/placement/8-resizer.def

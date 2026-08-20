@@ -1,0 +1,17 @@
+
+Input: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.def
+Output: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/signoff/DIF_R2SDF_top.klayout.gds
+Design: DIF_R2SDF_top
+Technology File: /home/opentools/OpenLane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/home/opentools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds']
+LEF File: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.nom.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/opentools/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+[INFO] Copying toplevel cell 'DIF_R2SDF_top'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/home/opentools/OpenLane/designs/fft/runs/opttime1/results/signoff/DIF_R2SDF_top.klayout.gds'
+[INFO] Done.

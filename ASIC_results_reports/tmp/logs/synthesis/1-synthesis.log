@@ -1,0 +1,2301 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.12+45 (git sha1 cfe940a98, gcc 11.2.0-19ubuntu1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/stage4_top.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/stage4_top.v' to AST representation.
+Generating RTLIL representation for module `\DIF_R2SDF_Stage4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/shift_register_1.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/shift_register_1.v' to AST representation.
+Generating RTLIL representation for module `\shift_register_1'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/BF4_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/BF4_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\BF4_input_MUX'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/CU_stage1.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/CU_stage1.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Stage1_CU'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/stage3_top.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/stage3_top.v' to AST representation.
+Generating RTLIL representation for module `\DIF_R2SDF_Stage3'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/butterfly_st1.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Butterfly_St1'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/ShiftREG1_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/ShiftREG1_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\ShiftREG1_input_MUX'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/stage1_top.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/stage1_top.v' to AST representation.
+Generating RTLIL representation for module `\DIF_R2SDF_Stage1'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/CU_stage2.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/CU_stage2.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Stage2_CU'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/stage2_top.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/stage2_top.v' to AST representation.
+Generating RTLIL representation for module `\DIF_R2SDF_Stage2'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/CU_stage3.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/CU_stage3.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Stage3_CU'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v' to AST representation.
+Generating RTLIL representation for module `\Twiddle_ROM_Stage3'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/ShiftREG2_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/ShiftREG2_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\ShiftREG2_input_MUX'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/ShiftREG4_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/ShiftREG4_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\ShiftREG4_input_MUX'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/BF2_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/BF2_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\BF2_input_MUX'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/butterfly_st2.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Butterfly_St2'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/CU_stage4.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/CU_stage4.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Stage4_CU'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/top.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/top.v' to AST representation.
+Generating RTLIL representation for module `\DIF_R2SDF_top'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/shift_register_8.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/shift_register_8.v' to AST representation.
+Generating RTLIL representation for module `\shift_register_8'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_8.v:25
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_8.v:24
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/ShiftREG8_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/ShiftREG8_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\ShiftREG8_input_MUX'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/shift_register_2.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/shift_register_2.v' to AST representation.
+Generating RTLIL representation for module `\shift_register_2'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_2.v:25
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_2.v:24
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/BF3_input_MUX.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/BF3_input_MUX.v' to AST representation.
+Generating RTLIL representation for module `\BF3_input_MUX'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/butterfly_st3.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Butterfly_St3'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/butterfly_st4.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v' to AST representation.
+Generating RTLIL representation for module `\DIF_Butterfly_St4'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/shift_register_4.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/shift_register_4.v' to AST representation.
+Generating RTLIL representation for module `\shift_register_4'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_4.v:27
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_4.v:26
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v' to AST representation.
+Generating RTLIL representation for module `\Twiddle_ROM_Stage2'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: /home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v
+Parsing SystemVerilog input from `/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v' to AST representation.
+Generating RTLIL representation for module `\Twiddle_ROM_stage1'.
+Successfully finished Verilog frontend.
+
+28. Generating Graphviz representation of design.
+Writing dot description to `/home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/hierarchy.dot'.
+Dumping module DIF_R2SDF_top to page 1.
+
+29. Executing HIERARCHY pass (managing design hierarchy).
+
+29.1. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     \DIF_R2SDF_Stage4
+Used module:         \DIF_Butterfly_St4
+Used module:         \shift_register_1
+Used module:         \ShiftREG1_input_MUX
+Used module:         \BF4_input_MUX
+Used module:         \DIF_Stage4_CU
+Used module:     \DIF_R2SDF_Stage3
+Used module:         \DIF_Butterfly_St3
+Used module:         \shift_register_2
+Used module:         \ShiftREG2_input_MUX
+Used module:         \BF3_input_MUX
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     \DIF_R2SDF_Stage2
+Used module:         \BF2_input_MUX
+Used module:         \DIF_Butterfly_St2
+Used module:         \shift_register_4
+Used module:         \ShiftREG4_input_MUX
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     \DIF_R2SDF_Stage1
+Used module:         \DIF_Butterfly_St1
+Used module:         \shift_register_8
+Used module:         \ShiftREG8_input_MUX
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+Parameter \IN_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+
+29.2. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_Butterfly_St4'.
+Parameter \IN_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Generating RTLIL representation for module `$paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4'.
+Parameter \DATA_WIDTH = 12
+
+29.3. Executing AST frontend in derive mode using pre-parsed AST for module `\shift_register_1'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.4. Executing AST frontend in derive mode using pre-parsed AST for module `\ShiftREG1_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.5. Executing AST frontend in derive mode using pre-parsed AST for module `\BF4_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+
+29.6. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_Butterfly_St3'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Generating RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3'.
+Parameter \DATA_WIDTH = 12
+
+29.7. Executing AST frontend in derive mode using pre-parsed AST for module `\shift_register_2'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_2.v:25
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_2.v:24
+Parameter \DATA_WIDTH = 12
+
+29.8. Executing AST frontend in derive mode using pre-parsed AST for module `\ShiftREG2_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.9. Executing AST frontend in derive mode using pre-parsed AST for module `\BF3_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+
+29.10. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_Butterfly_St1'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Generating RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1'.
+Parameter \DATA_WIDTH = 12
+
+29.11. Executing AST frontend in derive mode using pre-parsed AST for module `\shift_register_8'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_8.v:25
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_8.v:24
+Parameter \DATA_WIDTH = 12
+
+29.12. Executing AST frontend in derive mode using pre-parsed AST for module `\ShiftREG8_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.13. Executing AST frontend in derive mode using pre-parsed AST for module `\BF2_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+
+29.14. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_Butterfly_St2'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Generating RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2'.
+Parameter \DATA_WIDTH = 12
+
+29.15. Executing AST frontend in derive mode using pre-parsed AST for module `\shift_register_4'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Warning: Replacing memory \delay_im with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_4.v:27
+Warning: Replacing memory \delay_re with list of registers. See /home/opentools/OpenLane/designs/fft/src/shift_register_4.v:26
+Parameter \DATA_WIDTH = 12
+
+29.16. Executing AST frontend in derive mode using pre-parsed AST for module `\ShiftREG4_input_MUX'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.17. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_R2SDF_Stage4'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.18. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_R2SDF_Stage3'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.19. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_R2SDF_Stage2'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+
+29.20. Executing AST frontend in derive mode using pre-parsed AST for module `\DIF_R2SDF_Stage1'.
+Parameter \DATA_WIDTH = 12
+Generating RTLIL representation for module `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100'.
+
+29.21. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Butterfly_St4
+Used module:         \shift_register_1
+Used module:         \ShiftREG1_input_MUX
+Used module:         \BF4_input_MUX
+Used module:         \DIF_Stage4_CU
+Used module:     $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Butterfly_St3
+Used module:         \shift_register_2
+Used module:         \ShiftREG2_input_MUX
+Used module:         \BF3_input_MUX
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \BF2_input_MUX
+Used module:         \DIF_Butterfly_St2
+Used module:         \shift_register_4
+Used module:         \ShiftREG4_input_MUX
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Butterfly_St1
+Used module:         \shift_register_8
+Used module:         \ShiftREG8_input_MUX
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+Parameter \IN_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Found cached RTLIL representation for module `$paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Found cached RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Found cached RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \IN_WIDTH = 12
+Parameter \W_WIDTH = 12
+Parameter \OUT_WIDTH = 12
+Found cached RTLIL representation for module `$paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100'.
+Parameter \DATA_WIDTH = 12
+Found cached RTLIL representation for module `$paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100'.
+
+29.22. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4
+Used module:         $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Stage4_CU
+Used module:     $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3
+Used module:         $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2
+Used module:         $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1
+Used module:         $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+
+29.23. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4
+Used module:         $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Stage4_CU
+Used module:     $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3
+Used module:         $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2
+Used module:         $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1
+Used module:         $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+Removing unused module `\shift_register_4'.
+Removing unused module `\DIF_Butterfly_St4'.
+Removing unused module `\DIF_Butterfly_St3'.
+Removing unused module `\BF3_input_MUX'.
+Removing unused module `\shift_register_2'.
+Removing unused module `\ShiftREG8_input_MUX'.
+Removing unused module `\shift_register_8'.
+Removing unused module `\DIF_Butterfly_St2'.
+Removing unused module `\BF2_input_MUX'.
+Removing unused module `\ShiftREG4_input_MUX'.
+Removing unused module `\ShiftREG2_input_MUX'.
+Removing unused module `\DIF_R2SDF_Stage2'.
+Removing unused module `\DIF_R2SDF_Stage1'.
+Removing unused module `\ShiftREG1_input_MUX'.
+Removing unused module `\DIF_Butterfly_St1'.
+Removing unused module `\DIF_R2SDF_Stage3'.
+Removing unused module `\BF4_input_MUX'.
+Removing unused module `\shift_register_1'.
+Removing unused module `\DIF_R2SDF_Stage4'.
+Removed 19 unused modules.
+
+30. Executing TRIBUF pass.
+
+31. Executing SYNTH pass.
+
+31.1. Executing HIERARCHY pass (managing design hierarchy).
+
+31.1.1. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4
+Used module:         $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Stage4_CU
+Used module:     $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3
+Used module:         $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2
+Used module:         $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1
+Used module:         $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+
+31.1.2. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Used module:     $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4
+Used module:         $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \DIF_Stage4_CU
+Used module:     $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3
+Used module:         $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage3
+Used module:         \DIF_Stage3_CU
+Used module:     $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2
+Used module:         $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_Stage2
+Used module:         \DIF_Stage2_CU
+Used module:     $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1
+Used module:         $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100
+Used module:         \Twiddle_ROM_stage1
+Used module:         \DIF_Stage1_CU
+Removed 0 unused modules.
+
+31.2. Executing PROC pass (convert processes to netlists).
+
+31.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+31.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145 in module Twiddle_ROM_stage1.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145 in module Twiddle_ROM_stage1.
+Removed 1 dead cases from process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144 in module Twiddle_ROM_Stage2.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144 in module Twiddle_ROM_Stage2.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:51$224 in module $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222 in module $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216 in module $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.
+Marked 3 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99 in module DIF_Stage4_CU.
+Marked 2 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93 in module DIF_Stage4_CU.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198 in module $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.
+Removed 1 dead cases from process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70 in module Twiddle_ROM_Stage3.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70 in module Twiddle_ROM_Stage3.
+Marked 2 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68 in module DIF_Stage3_CU.
+Marked 2 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62 in module DIF_Stage3_CU.
+Marked 3 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52 in module DIF_Stage2_CU.
+Marked 2 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39 in module DIF_Stage2_CU.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174 in module $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.
+Marked 2 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8 in module DIF_Stage1_CU.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5 in module DIF_Stage1_CU.
+Marked 1 switch rules as full_case in process $proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154 in module $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Removed a total of 3 dead cases.
+
+31.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 37 redundant assignments.
+Promoted 9 assignments to connections.
+
+31.2.4. Executing PROC_INIT pass (extract init attributes).
+
+31.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:51$224'.
+Found async reset \rst_n in `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+Found async reset \rst_n in `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+Found async reset \rst_n in `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+Found async reset \rst_n in `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93'.
+Found async reset \rst_n in `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+Found async reset \rst_n in `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+Found async reset \rst_n in `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62'.
+Found async reset \rst_n in `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+Found async reset \rst_n in `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39'.
+Found async reset \rst_n in `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+Found async reset \rst_n in `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+Found async reset \rst_n in `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5'.
+Found async reset \rst_n in `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154'.
+
+31.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\Twiddle_ROM_stage1.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145'.
+     1/2: $1\w_im[11:0]
+     2/2: $1\w_re[11:0]
+Creating decoders for process `\Twiddle_ROM_Stage2.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144'.
+     1/2: $1\w_im[11:0]
+     2/2: $1\w_re[11:0]
+Creating decoders for process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:51$224'.
+     1/1: $0\valid_reg[0:0]
+Creating decoders for process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+     1/2: $0\din_im_reg[11:0]
+     2/2: $0\din_re_reg[11:0]
+Creating decoders for process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+     1/9: $1\i[31:0]
+     2/9: $0\delay_im[3][11:0]
+     3/9: $0\delay_re[3][11:0]
+     4/9: $0\delay_im[2][11:0]
+     5/9: $0\delay_re[2][11:0]
+     6/9: $0\delay_im[1][11:0]
+     7/9: $0\delay_re[1][11:0]
+     8/9: $0\delay_im[0][11:0]
+     9/9: $0\delay_re[0][11:0]
+Creating decoders for process `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+     1/2: $0\out_valid[0:0]
+     2/2: $0\valid[0:0]
+Creating decoders for process `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93'.
+     1/1: $0\count[3:0]
+Creating decoders for process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+     1/17: $1\i[31:0]
+     2/17: $0\delay_im[7][11:0]
+     3/17: $0\delay_re[7][11:0]
+     4/17: $0\delay_im[6][11:0]
+     5/17: $0\delay_re[6][11:0]
+     6/17: $0\delay_im[5][11:0]
+     7/17: $0\delay_re[5][11:0]
+     8/17: $0\delay_im[4][11:0]
+     9/17: $0\delay_re[4][11:0]
+    10/17: $0\delay_im[3][11:0]
+    11/17: $0\delay_re[3][11:0]
+    12/17: $0\delay_im[2][11:0]
+    13/17: $0\delay_re[2][11:0]
+    14/17: $0\delay_im[1][11:0]
+    15/17: $0\delay_re[1][11:0]
+    16/17: $0\delay_im[0][11:0]
+    17/17: $0\delay_re[0][11:0]
+Creating decoders for process `\Twiddle_ROM_Stage3.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70'.
+     1/2: $1\w_im[11:0]
+     2/2: $1\w_re[11:0]
+Creating decoders for process `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+     1/2: $0\valid[0:0]
+     2/2: $0\rom_addr[0:0]
+Creating decoders for process `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62'.
+     1/1: $0\count[3:0]
+Creating decoders for process `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+     1/2: $0\valid[0:0]
+     2/2: $0\rom_addr[1:0]
+Creating decoders for process `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39'.
+     1/1: $0\count[3:0]
+Creating decoders for process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+     1/5: $0\delay_im[1][11:0]
+     2/5: $0\delay_re[1][11:0]
+     3/5: $0\delay_im[0][11:0]
+     4/5: $0\delay_re[0][11:0]
+     5/5: $1\i[31:0]
+Creating decoders for process `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+     1/2: $0\rom_addr[2:0]
+     2/2: $0\valid[0:0]
+Creating decoders for process `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5'.
+     1/1: $0\count[3:0]
+Creating decoders for process `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154'.
+     1/2: $0\dout_im[11:0]
+     2/2: $0\dout_re[11:0]
+
+31.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\Twiddle_ROM_stage1.\w_re' from process `\Twiddle_ROM_stage1.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145'.
+No latch inferred for signal `\Twiddle_ROM_stage1.\w_im' from process `\Twiddle_ROM_stage1.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145'.
+No latch inferred for signal `\Twiddle_ROM_Stage2.\w_re' from process `\Twiddle_ROM_Stage2.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144'.
+No latch inferred for signal `\Twiddle_ROM_Stage2.\w_im' from process `\Twiddle_ROM_Stage2.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144'.
+No latch inferred for signal `\Twiddle_ROM_Stage3.\w_re' from process `\Twiddle_ROM_Stage3.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70'.
+No latch inferred for signal `\Twiddle_ROM_Stage3.\w_im' from process `\Twiddle_ROM_Stage3.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70'.
+
+31.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.\valid_reg' using process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:51$224'.
+  created $adff cell `$procdff$325' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.\din_re_reg' using process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+  created $adff cell `$procdff$326' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.\din_im_reg' using process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+  created $adff cell `$procdff$327' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\i' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$328' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[0]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$329' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[1]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$330' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[2]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$331' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[3]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$332' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[0]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$333' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[1]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$334' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[2]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$335' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[3]' using process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+  created $adff cell `$procdff$336' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage4_CU.\valid' using process `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+  created $adff cell `$procdff$337' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage4_CU.\out_valid' using process `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+  created $adff cell `$procdff$338' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage4_CU.\count' using process `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93'.
+  created $adff cell `$procdff$339' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\i' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$340' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[0]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$341' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[1]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$342' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[2]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$343' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[3]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$344' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[4]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$345' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[5]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$346' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[6]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$347' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[7]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$348' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[0]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$349' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[1]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$350' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[2]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$351' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[3]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$352' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[4]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$353' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[5]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$354' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[6]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$355' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[7]' using process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+  created $adff cell `$procdff$356' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage3_CU.\valid' using process `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+  created $adff cell `$procdff$357' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage3_CU.\rom_addr' using process `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+  created $adff cell `$procdff$358' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage3_CU.\count' using process `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62'.
+  created $adff cell `$procdff$359' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage2_CU.\valid' using process `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+  created $adff cell `$procdff$360' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage2_CU.\rom_addr' using process `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+  created $adff cell `$procdff$361' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage2_CU.\count' using process `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39'.
+  created $adff cell `$procdff$362' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.\i' using process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+  created $adff cell `$procdff$363' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[0]' using process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+  created $adff cell `$procdff$364' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_re[1]' using process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+  created $adff cell `$procdff$365' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[0]' using process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+  created $adff cell `$procdff$366' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.\delay_im[1]' using process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+  created $adff cell `$procdff$367' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage1_CU.\valid' using process `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+  created $adff cell `$procdff$368' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage1_CU.\rom_addr' using process `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+  created $adff cell `$procdff$369' with positive edge clock and negative level reset.
+Creating register for signal `\DIF_Stage1_CU.\count' using process `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5'.
+  created $adff cell `$procdff$370' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.\dout_re' using process `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154'.
+  created $adff cell `$procdff$371' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.\dout_im' using process `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154'.
+  created $adff cell `$procdff$372' with positive edge clock and negative level reset.
+
+31.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+31.2.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\Twiddle_ROM_stage1.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145'.
+Removing empty process `Twiddle_ROM_stage1.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage1.v:8$145'.
+Found and cleaned up 1 empty switch in `\Twiddle_ROM_Stage2.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144'.
+Removing empty process `Twiddle_ROM_Stage2.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage2.v:9$144'.
+Removing empty process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:51$224'.
+Found and cleaned up 1 empty switch in `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+Removing empty process `$paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/stage1_top.v:31$222'.
+Removing empty process `$paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_4.v:22$216'.
+Found and cleaned up 2 empty switches in `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+Removing empty process `DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:109$99'.
+Found and cleaned up 2 empty switches in `\DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93'.
+Removing empty process `DIF_Stage4_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:38$93'.
+Removing empty process `$paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_8.v:20$198'.
+Found and cleaned up 1 empty switch in `\Twiddle_ROM_Stage3.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70'.
+Removing empty process `Twiddle_ROM_Stage3.$proc$/home/opentools/OpenLane/designs/fft/src/Twidle_factor_ROM_stage3.v:8$70'.
+Found and cleaned up 1 empty switch in `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+Removing empty process `DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:102$68'.
+Found and cleaned up 2 empty switches in `\DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62'.
+Removing empty process `DIF_Stage3_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:27$62'.
+Found and cleaned up 2 empty switches in `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+Removing empty process `DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:73$52'.
+Found and cleaned up 2 empty switches in `\DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39'.
+Removing empty process `DIF_Stage2_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:28$39'.
+Removing empty process `$paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_2.v:20$174'.
+Found and cleaned up 2 empty switches in `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+Removing empty process `DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:43$8'.
+Found and cleaned up 1 empty switch in `\DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5'.
+Removing empty process `DIF_Stage1_CU.$proc$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:26$5'.
+Removing empty process `$paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.$proc$/home/opentools/OpenLane/designs/fft/src/shift_register_1.v:15$154'.
+Cleaned up 18 empty switches.
+
+31.2.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module Twiddle_ROM_stage1.
+<suppressed ~2 debug messages>
+Optimizing module Twiddle_ROM_Stage2.
+<suppressed ~2 debug messages>
+Optimizing module $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2.
+<suppressed ~2 debug messages>
+Optimizing module DIF_R2SDF_top.
+Optimizing module DIF_Stage4_CU.
+<suppressed ~4 debug messages>
+Optimizing module $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1.
+<suppressed ~6 debug messages>
+Optimizing module Twiddle_ROM_Stage3.
+<suppressed ~2 debug messages>
+Optimizing module DIF_Stage3_CU.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module DIF_Stage2_CU.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3.
+<suppressed ~2 debug messages>
+Optimizing module $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module DIF_Stage1_CU.
+Optimizing module $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Optimizing module $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4.
+<suppressed ~4 debug messages>
+
+31.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module Twiddle_ROM_stage1.
+Deleting now unused module Twiddle_ROM_Stage2.
+Deleting now unused module $paramod\DIF_R2SDF_Stage1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\DIF_R2SDF_Stage2\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\DIF_R2SDF_Stage3\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\DIF_R2SDF_Stage4\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\ShiftREG4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\shift_register_4\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St2.
+Deleting now unused module DIF_Stage4_CU.
+Deleting now unused module $paramod\BF2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\ShiftREG8_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\shift_register_8\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St1.
+Deleting now unused module Twiddle_ROM_Stage3.
+Deleting now unused module DIF_Stage3_CU.
+Deleting now unused module $paramod\BF3_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module DIF_Stage2_CU.
+Deleting now unused module $paramod\ShiftREG2_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\shift_register_2\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod$ed3354d1ae6d4293491dc5006d709232049d4ce7\DIF_Butterfly_St3.
+Deleting now unused module $paramod\BF4_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module DIF_Stage1_CU.
+Deleting now unused module $paramod\ShiftREG1_input_MUX\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod\shift_register_1\DATA_WIDTH=s32'00000000000000000000000000001100.
+Deleting now unused module $paramod$58e125b0fc17f4bce8d27c83e828e52611a8b392\DIF_Butterfly_St4.
+<suppressed ~26 debug messages>
+
+31.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~8 debug messages>
+
+31.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 19 unused cells and 180 unused wires.
+<suppressed ~28 debug messages>
+
+31.6. Executing CHECK pass (checking for obvious problems).
+Checking module DIF_R2SDF_top...
+Found and reported 0 problems.
+
+31.7. Executing OPT pass (performing simple optimizations).
+
+31.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+31.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~37 debug messages>
+
+31.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+    New ctrl vector for $pmux cell $flatten\STAGE1.\ROM.$procmux$226: { $flatten\STAGE1.\ROM.$procmux$234_CMP $flatten\STAGE1.\ROM.$procmux$230_CMP $auto$opt_reduce.cc:134:opt_mux$378 $auto$opt_reduce.cc:134:opt_mux$376 $auto$opt_reduce.cc:134:opt_mux$374 }
+    New ctrl vector for $pmux cell $flatten\STAGE2.\ROM.$procmux$244: { $flatten\STAGE2.\ROM.$procmux$248_CMP $flatten\STAGE2.\ROM.$procmux$246_CMP $auto$opt_reduce.cc:134:opt_mux$380 }
+    New ctrl vector for $pmux cell $flatten\STAGE3.\CU.$procmux$276: $auto$opt_reduce.cc:134:opt_mux$382
+    New ctrl vector for $pmux cell $flatten\STAGE3.\CU.$procmux$286: $auto$opt_reduce.cc:134:opt_mux$384
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 4 changes.
+
+31.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+31.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~5 debug messages>
+
+31.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~37 debug messages>
+
+31.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.7.16. Finished OPT passes. (There is nothing left to do.)
+
+31.8. Executing FSM pass (extract and optimize FSM).
+
+31.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+31.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+31.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+31.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+31.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+31.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+31.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+31.9. Executing OPT pass (performing simple optimizations).
+
+31.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~37 debug messages>
+
+31.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\STAGE4.\CU.$procdff$339 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE4.\CU.$0\count[3:0], Q = \STAGE4.CU.count).
+Adding EN signal on $flatten\STAGE3.\CU.$procdff$359 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE3.\CU.$0\count[3:0], Q = \STAGE3.CU.count).
+Adding EN signal on $flatten\STAGE2.\CU.$procdff$362 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE2.\CU.$0\count[3:0], Q = \STAGE2.CU.count).
+Adding EN signal on $flatten\STAGE1.\CU.$procdff$370 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE1.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:33$7_Y, Q = \STAGE1.CU.count).
+Adding EN signal on $flatten\STAGE1.\CU.$procdff$369 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE1.\CU.$0\rom_addr[2:0], Q = \STAGE1.CU.rom_addr).
+Adding EN signal on $flatten\STAGE1.\CU.$procdff$368 ($adff) from module DIF_R2SDF_top (D = $flatten\STAGE1.\CU.$0\valid[0:0], Q = \STAGE1.CU.valid).
+Adding EN signal on $flatten\STAGE1.$procdff$327 ($adff) from module DIF_R2SDF_top (D = \din_im, Q = \STAGE1.din_im_reg).
+Adding EN signal on $flatten\STAGE1.$procdff$326 ($adff) from module DIF_R2SDF_top (D = \din_re, Q = \STAGE1.din_re_reg).
+
+31.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 3 unused cells and 3 unused wires.
+<suppressed ~4 debug messages>
+
+31.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~5 debug messages>
+
+31.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~34 debug messages>
+
+31.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+31.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+31.9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.9.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.9.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~34 debug messages>
+
+31.9.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.9.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.9.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.9.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.9.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.9.23. Finished OPT passes. (There is nothing left to do.)
+
+31.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195 ($add).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195 ($add).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195 ($add).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194 ($sub).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194 ($sub).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194 ($sub).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191 ($mul).
+Removed top 1 bits (of 3) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\ROM.$procmux$231_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\ROM.$procmux$232_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\ROM.$procmux$233_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:53$11 ($ge).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12 ($sub).
+Removed top 1 bits (of 4) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12 ($sub).
+Removed top 1 bits (of 4) from port A of cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12 ($sub).
+Removed top 31 bits (of 32) from mux cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$ternary$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:60$14 ($mux).
+Removed cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$procmux$313 ($mux).
+Removed cell DIF_R2SDF_top.$flatten\STAGE1.\CU.$procmux$318 ($mux).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205 ($add).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205 ($add).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205 ($add).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206 ($sub).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206 ($sub).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206 ($sub).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207 ($sub).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207 ($sub).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207 ($sub).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212 ($sub).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212 ($sub).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212 ($sub).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213 ($add).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213 ($add).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213 ($add).
+Removed top 1 bits (of 2) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\ROM.$procmux$247_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$44 ($ge).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$45 ($le).
+Removed top 2 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$54 ($ge).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$55 ($le).
+Removed top 2 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57 ($sub).
+Removed top 2 bits (of 4) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57 ($sub).
+Removed top 2 bits (of 4) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57 ($sub).
+Removed top 2 bits (of 4) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61 ($sub).
+Removed top 2 bits (of 4) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61 ($sub).
+Removed top 2 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61 ($sub).
+Removed cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$procmux$308 ($mux).
+Removed cell DIF_R2SDF_top.$flatten\STAGE2.\CU.$procmux$311 ($mux).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204 ($add).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204 ($add).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204 ($add).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163 ($add).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163 ($add).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163 ($add).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164 ($sub).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164 ($sub).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164 ($sub).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165 ($sub).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165 ($sub).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165 ($sub).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170 ($sub).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170 ($sub).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170 ($sub).
+Removed top 3 bits (of 25) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171 ($add).
+Removed top 3 bits (of 25) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171 ($add).
+Removed top 3 bits (of 25) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171 ($add).
+Removed top 1 bits (of 12) from mux cell DIF_R2SDF_top.$flatten\STAGE3.\ROM.$procmux$272 ($pmux).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$281_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$282_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$283_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$284_CMP0 ($eq).
+Removed cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$291 ($mux).
+Removed cell DIF_R2SDF_top.$flatten\STAGE3.\CU.$procmux$294 ($mux).
+Removed top 1 bits (of 13) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162 ($add).
+Removed top 1 bits (of 13) from port A of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162 ($add).
+Removed top 1 bits (of 13) from port B of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162 ($add).
+Removed cell DIF_R2SDF_top.$flatten\STAGE4.\CU.$procmux$264 ($mux).
+Removed cell DIF_R2SDF_top.$flatten\STAGE4.\CU.$procmux$267 ($mux).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168 ($mul).
+Removed top 2 bits (of 24) from port Y of cell DIF_R2SDF_top.$flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169 ($mul).
+Removed top 2 bits (of 4) from wire DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57_Y.
+Removed top 2 bits (of 4) from wire DIF_R2SDF_top.$flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61_Y.
+
+31.11. Executing PEEPOPT pass (run peephole optimizers).
+
+31.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~1 debug messages>
+
+31.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module DIF_R2SDF_top:
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195 ($add).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:37$182 ($add).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:38$183 ($add).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190 ($mul).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191 ($mul).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192 ($mul).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193 ($mul).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194 ($sub).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:44$184 ($sub).
+  creating $macc model for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:45$185 ($sub).
+  creating $macc model for $flatten\STAGE1.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:33$7 ($add).
+  creating $macc model for $flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12 ($sub).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204 ($add).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205 ($add).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213 ($add).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208 ($mul).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209 ($mul).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210 ($mul).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211 ($mul).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206 ($sub).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207 ($sub).
+  creating $macc model for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212 ($sub).
+  creating $macc model for $flatten\STAGE2.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:35$42 ($add).
+  creating $macc model for $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57 ($sub).
+  creating $macc model for $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61 ($sub).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171 ($add).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162 ($add).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163 ($add).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166 ($mul).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167 ($mul).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168 ($mul).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169 ($mul).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170 ($sub).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164 ($sub).
+  creating $macc model for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165 ($sub).
+  creating $macc model for $flatten\STAGE3.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:36$65 ($add).
+  creating $macc model for $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:34$146 ($add).
+  creating $macc model for $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:40$147 ($add).
+  creating $macc model for $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:46$148 ($sub).
+  creating $macc model for $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:52$149 ($sub).
+  creating $macc model for $flatten\STAGE4.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:47$96 ($add).
+  merging $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166 into $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170.
+  merging $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167 into $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170.
+  merging $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168 into $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171.
+  merging $macc model for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169 into $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171.
+  merging $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208 into $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212.
+  merging $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209 into $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212.
+  merging $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210 into $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213.
+  merging $macc model for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211 into $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213.
+  merging $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190 into $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194.
+  merging $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191 into $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194.
+  merging $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192 into $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195.
+  merging $macc model for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193 into $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195.
+  creating $alu model for $macc $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163.
+  creating $alu model for $macc $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162.
+  creating $alu model for $macc $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61.
+  creating $alu model for $macc $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57.
+  creating $alu model for $macc $flatten\STAGE2.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:35$42.
+  creating $alu model for $macc $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207.
+  creating $alu model for $macc $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206.
+  creating $alu model for $macc $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:34$146.
+  creating $alu model for $macc $flatten\STAGE3.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:36$65.
+  creating $alu model for $macc $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165.
+  creating $alu model for $macc $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164.
+  creating $alu model for $macc $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205.
+  creating $alu model for $macc $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204.
+  creating $alu model for $macc $flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12.
+  creating $alu model for $macc $flatten\STAGE1.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:33$7.
+  creating $alu model for $macc $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:45$185.
+  creating $alu model for $macc $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:44$184.
+  creating $alu model for $macc $flatten\STAGE4.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:47$96.
+  creating $alu model for $macc $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:52$149.
+  creating $alu model for $macc $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:46$148.
+  creating $alu model for $macc $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:40$147.
+  creating $alu model for $macc $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:38$183.
+  creating $alu model for $macc $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:37$182.
+  creating $macc cell for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:99$213: $auto$alumacc.cc:365:replace_macc$405
+  creating $macc cell for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:140$171: $auto$alumacc.cc:365:replace_macc$406
+  creating $macc cell for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:124$194: $auto$alumacc.cc:365:replace_macc$407
+  creating $macc cell for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:98$212: $auto$alumacc.cc:365:replace_macc$408
+  creating $macc cell for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:134$170: $auto$alumacc.cc:365:replace_macc$409
+  creating $macc cell for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:125$195: $auto$alumacc.cc:365:replace_macc$410
+  creating $alu model for $flatten\STAGE1.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:53$11 ($ge): new $alu
+  creating $alu model for $flatten\STAGE1.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:60$13 ($ge): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$44 ($ge): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:64$47 ($ge): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$54 ($ge): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:93$58 ($ge): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$45 ($le): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:64$48 ($le): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$55 ($le): new $alu
+  creating $alu model for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:93$59 ($le): new $alu
+  creating $alu cell for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:93$59: $auto$alumacc.cc:485:replace_alu$421
+  creating $alu cell for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$55: $auto$alumacc.cc:485:replace_alu$430
+  creating $alu cell for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:64$48: $auto$alumacc.cc:485:replace_alu$443
+  creating $alu cell for $flatten\STAGE2.\CU.$le$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$45: $auto$alumacc.cc:485:replace_alu$452
+  creating $alu cell for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:93$58: $auto$alumacc.cc:485:replace_alu$465
+  creating $alu cell for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:85$54: $auto$alumacc.cc:485:replace_alu$478
+  creating $alu cell for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:64$47: $auto$alumacc.cc:485:replace_alu$487
+  creating $alu cell for $flatten\STAGE2.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:63$44: $auto$alumacc.cc:485:replace_alu$500
+  creating $alu cell for $flatten\STAGE1.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:60$13: $auto$alumacc.cc:485:replace_alu$509
+  creating $alu cell for $flatten\STAGE1.\CU.$ge$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:53$11: $auto$alumacc.cc:485:replace_alu$522
+  creating $alu cell for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:38$183: $auto$alumacc.cc:485:replace_alu$531
+  creating $alu cell for $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:40$147: $auto$alumacc.cc:485:replace_alu$534
+  creating $alu cell for $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:46$148: $auto$alumacc.cc:485:replace_alu$537
+  creating $alu cell for $flatten\STAGE4.\BUTTERFLY4.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:52$149: $auto$alumacc.cc:485:replace_alu$540
+  creating $alu cell for $flatten\STAGE4.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage4.v:47$96: $auto$alumacc.cc:485:replace_alu$543
+  creating $alu cell for $flatten\STAGE1.\BUTTERFLY.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:37$182: $auto$alumacc.cc:485:replace_alu$546
+  creating $alu cell for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:44$184: $auto$alumacc.cc:485:replace_alu$549
+  creating $alu cell for $flatten\STAGE1.\BUTTERFLY.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:45$185: $auto$alumacc.cc:485:replace_alu$552
+  creating $alu cell for $flatten\STAGE1.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:33$7: $auto$alumacc.cc:485:replace_alu$555
+  creating $alu cell for $flatten\STAGE1.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage1.v:54$12: $auto$alumacc.cc:485:replace_alu$558
+  creating $alu cell for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:33$204: $auto$alumacc.cc:485:replace_alu$561
+  creating $alu cell for $flatten\STAGE2.\BUTTERFLY2.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:34$205: $auto$alumacc.cc:485:replace_alu$564
+  creating $alu cell for $flatten\STAGE3.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage3.v:36$65: $auto$alumacc.cc:485:replace_alu$567
+  creating $alu cell for $flatten\STAGE4.\BUTTERFLY4.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st4.v:34$146: $auto$alumacc.cc:485:replace_alu$570
+  creating $alu cell for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:40$206: $auto$alumacc.cc:485:replace_alu$573
+  creating $alu cell for $flatten\STAGE2.\BUTTERFLY2.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:41$207: $auto$alumacc.cc:485:replace_alu$576
+  creating $alu cell for $flatten\STAGE2.\CU.$add$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:35$42: $auto$alumacc.cc:485:replace_alu$579
+  creating $alu cell for $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:87$57: $auto$alumacc.cc:485:replace_alu$582
+  creating $alu cell for $flatten\STAGE2.\CU.$sub$/home/opentools/OpenLane/designs/fft/src/CU_stage2.v:95$61: $auto$alumacc.cc:485:replace_alu$585
+  creating $alu cell for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:51$164: $auto$alumacc.cc:485:replace_alu$588
+  creating $alu cell for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:35$162: $auto$alumacc.cc:485:replace_alu$591
+  creating $alu cell for $flatten\STAGE3.\BUTTERFLY3.$sub$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:57$165: $auto$alumacc.cc:485:replace_alu$594
+  creating $alu cell for $flatten\STAGE3.\BUTTERFLY3.$add$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:41$163: $auto$alumacc.cc:485:replace_alu$597
+  created 33 $alu and 6 $macc cells.
+
+31.14. Executing SHARE pass (SAT-based resource sharing).
+Found 12 cells in module DIF_R2SDF_top that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169 ($mul):
+    Found cell that is never activated: $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168 ($mul):
+    Found cell that is never activated: $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167 ($mul):
+    Found cell that is never activated: $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166 ($mul):
+    Found cell that is never activated: $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211 ($mul):
+    Found cell that is never activated: $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210 ($mul):
+    Found cell that is never activated: $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209 ($mul):
+    Found cell that is never activated: $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208 ($mul):
+    Found cell that is never activated: $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193 ($mul):
+    Found cell that is never activated: $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192 ($mul):
+    Found cell that is never activated: $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191 ($mul):
+    Found cell that is never activated: $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191
+    Cell is never active. Sharing is pointless, we simply remove it.
+  Analyzing resource sharing options for $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190 ($mul):
+    Found cell that is never activated: $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190
+    Cell is never active. Sharing is pointless, we simply remove it.
+Removing 12 cells in module DIF_R2SDF_top:
+  Removing cell $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:114$190 ($mul).
+  Removing cell $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:115$191 ($mul).
+  Removing cell $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:116$192 ($mul).
+  Removing cell $flatten\STAGE1.\BUTTERFLY.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st1.v:117$193 ($mul).
+  Removing cell $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:89$208 ($mul).
+  Removing cell $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:90$209 ($mul).
+  Removing cell $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:91$210 ($mul).
+  Removing cell $flatten\STAGE2.\BUTTERFLY2.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st2.v:92$211 ($mul).
+  Removing cell $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:115$166 ($mul).
+  Removing cell $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:118$167 ($mul).
+  Removing cell $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:122$168 ($mul).
+  Removing cell $flatten\STAGE3.\BUTTERFLY3.$mul$/home/opentools/OpenLane/designs/fft/src/butterfly_st3.v:125$169 ($mul).
+
+31.15. Executing OPT pass (performing simple optimizations).
+
+31.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~5 debug messages>
+Removed a total of 1 cells.
+
+31.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~31 debug messages>
+
+31.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 13 unused wires.
+<suppressed ~1 debug messages>
+
+31.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~31 debug messages>
+
+31.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.15.16. Finished OPT passes. (There is nothing left to do.)
+
+31.16. Executing MEMORY pass.
+
+31.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+31.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+31.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+31.16.4. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+31.16.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.16.6. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+31.16.7. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+31.16.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.16.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+31.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.18. Executing OPT pass (performing simple optimizations).
+
+31.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~69 debug messages>
+
+31.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+31.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 4 unused cells and 23 unused wires.
+<suppressed ~5 debug messages>
+
+31.18.5. Finished fast OPT passes.
+
+31.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+31.20. Executing OPT pass (performing simple optimizations).
+
+31.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+31.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+    Consolidated identical input bits for $pmux cell $flatten\STAGE1.\ROM.$procmux$226:
+      Old ports: A=12'000000000000, B=48'110000000000110001001101110100101011111001111000, Y=\STAGE1.BUTTERFLY.w_im
+      New ports: A=8'00000000, B=32'10000000110011011010101111111000, Y={ \STAGE1.BUTTERFLY.w_im [10] \STAGE1.BUTTERFLY.w_im [6:0] }
+      New connections: { \STAGE1.BUTTERFLY.w_im [11] \STAGE1.BUTTERFLY.w_im [9:7] } = { \STAGE1.BUTTERFLY.w_im [10] \STAGE1.BUTTERFLY.w_im [4] \STAGE1.BUTTERFLY.w_im [1] 1'0 }
+    Consolidated identical input bits for $pmux cell $flatten\STAGE1.\ROM.$procmux$235:
+      Old ports: A=12'010000000000, B=84'001110110010001011010100000110000111000000000000111001111000110100101011110001001101, Y=\STAGE1.BUTTERFLY.w_re
+      New ports: A=9'100000000, B=63'010110010011010100010000111000000000101111000100101011101001101, Y={ \STAGE1.BUTTERFLY.w_re [10] \STAGE1.BUTTERFLY.w_re [7:0] }
+      New connections: { \STAGE1.BUTTERFLY.w_re [11] \STAGE1.BUTTERFLY.w_re [9:8] } = { \STAGE1.BUTTERFLY.w_re [3] \STAGE1.BUTTERFLY.w_re [4] \STAGE1.BUTTERFLY.w_re [1] }
+    Consolidated identical input bits for $pmux cell $flatten\STAGE2.\ROM.$procmux$244:
+      Old ports: A=12'000000000000, B=24'110000000000110100101011, Y=\STAGE2.BUTTERFLY2.w_im
+      New ports: A=2'00, B=4'1011, Y={ \STAGE2.BUTTERFLY2.w_im [10] \STAGE2.BUTTERFLY2.w_im [0] }
+      New connections: { \STAGE2.BUTTERFLY2.w_im [11] \STAGE2.BUTTERFLY2.w_im [9:1] } = { \STAGE2.BUTTERFLY2.w_im [10] 1'0 \STAGE2.BUTTERFLY2.w_im [0] 2'00 \STAGE2.BUTTERFLY2.w_im [0] 1'0 \STAGE2.BUTTERFLY2.w_im [0] 1'0 \STAGE2.BUTTERFLY2.w_im [0] }
+    Consolidated identical input bits for $pmux cell $flatten\STAGE2.\ROM.$procmux$249:
+      Old ports: A=12'010000000000, B=36'001011010100000000000000110100101011, Y=\STAGE2.BUTTERFLY2.w_re
+      New ports: A=3'100, B=9'010000101, Y={ \STAGE2.BUTTERFLY2.w_re [10] \STAGE2.BUTTERFLY2.w_re [2] \STAGE2.BUTTERFLY2.w_re [0] }
+      New connections: { \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9:3] \STAGE2.BUTTERFLY2.w_re [1] } = { \STAGE2.BUTTERFLY2.w_re [0] \STAGE2.BUTTERFLY2.w_re [2] \STAGE2.BUTTERFLY2.w_re [0] \STAGE2.BUTTERFLY2.w_re [2] \STAGE2.BUTTERFLY2.w_re [2] \STAGE2.BUTTERFLY2.w_re [0] \STAGE2.BUTTERFLY2.w_re [2] \STAGE2.BUTTERFLY2.w_re [0] \STAGE2.BUTTERFLY2.w_re [0] }
+    Consolidated identical input bits for $mux cell $flatten\STAGE3.\ROM.$procmux$269:
+      Old ports: A=12'000000000000, B=12'110000000000, Y=\STAGE3.BUTTERFLY3.w_im
+      New ports: A=1'0, B=1'1, Y=\STAGE3.BUTTERFLY3.w_im [10]
+      New connections: { \STAGE3.BUTTERFLY3.w_im [11] \STAGE3.BUTTERFLY3.w_im [9:0] } = { \STAGE3.BUTTERFLY3.w_im [10] 10'0000000000 }
+    Consolidated identical input bits for $mux cell $flatten\STAGE3.\ROM.$procmux$272:
+      Old ports: A=11'10000000000, B=11'00000000000, Y=\STAGE3.BUTTERFLY3.w_re [10:0]
+      New ports: A=1'1, B=1'0, Y=\STAGE3.BUTTERFLY3.w_re [10]
+      New connections: \STAGE3.BUTTERFLY3.w_re [9:0] = 10'0000000000
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 6 changes.
+
+31.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.20.6. Executing OPT_SHARE pass.
+
+31.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~2 debug messages>
+
+31.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+31.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+31.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+31.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+31.20.14. Executing OPT_SHARE pass.
+
+31.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+31.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+31.20.18. Finished OPT passes. (There is nothing left to do.)
+
+31.21. Executing TECHMAP pass (map to technology primitives).
+
+31.21.1. Executing Verilog-2005 frontend: /home/opentools/OpenLane/install/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/opentools/OpenLane/install/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+31.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$2780480d52179e2db572a6e5133edf36e733d32e\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc.
+  add \STAGE2.BUTTERFLY2.diff_q57_re * { \STAGE2.BUTTERFLY2.w_re [11:9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [11] } (12x12 bits, signed)
+  sub \STAGE2.BUTTERFLY2.diff_q57_im * { \STAGE2.BUTTERFLY2.w_im [11] \STAGE2.BUTTERFLY2.w_im [11] 1'0 \STAGE2.BUTTERFLY2.w_im [8] 2'00 \STAGE2.BUTTERFLY2.w_im [8] 1'0 \STAGE2.BUTTERFLY2.w_im [8] 1'0 \STAGE2.BUTTERFLY2.w_im [8] \STAGE2.BUTTERFLY2.w_im [8] } (12x12 bits, signed)
+Using extmapper simplemap for cells of type $adff.
+Using template $paramod$ee721315a7b0169d82611b9aea01747035b97792\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$54b5b56f4359a73f4e91ebc5405f79b059a0eeaf\_90_pmux for cells of type $pmux.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_90_alu for cells of type $alu.
+Using template $paramod$ee3d784672cdb1cb32d9a801a3af776716f16b74\_90_alu for cells of type $alu.
+Using template $paramod$adbaf76fa5a3091a329503792521395f8ff4d1a4\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $or.
+  add \STAGE2.BUTTERFLY2.diff_q57_re * { \STAGE2.BUTTERFLY2.w_im [11] \STAGE2.BUTTERFLY2.w_im [11] 1'0 \STAGE2.BUTTERFLY2.w_im [8] 2'00 \STAGE2.BUTTERFLY2.w_im [8] 1'0 \STAGE2.BUTTERFLY2.w_im [8] 1'0 \STAGE2.BUTTERFLY2.w_im [8] \STAGE2.BUTTERFLY2.w_im [8] } (12x12 bits, signed)
+  add \STAGE2.BUTTERFLY2.diff_q57_im * { \STAGE2.BUTTERFLY2.w_re [11:9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [9] \STAGE2.BUTTERFLY2.w_re [11] \STAGE2.BUTTERFLY2.w_re [11] } (12x12 bits, signed)
+  add \STAGE3.BUTTERFLY3.diff_q57_re * { 1'0 \STAGE3.BUTTERFLY3.w_re [10] 10'0000000000 } (12x12 bits, signed)
+  sub \STAGE3.BUTTERFLY3.diff_q57_im * { \STAGE3.CU.rom_addr \STAGE3.CU.rom_addr 10'0000000000 } (12x12 bits, signed)
+  packed 13 (3) bits / 1 words into adder tree
+  add \STAGE3.BUTTERFLY3.diff_q57_re * { \STAGE3.CU.rom_addr \STAGE3.CU.rom_addr 10'0000000000 } (12x12 bits, signed)
+  add \STAGE3.BUTTERFLY3.diff_q57_im * { 1'0 \STAGE3.BUTTERFLY3.w_re [10] 10'0000000000 } (12x12 bits, signed)
+Using template $paramod$521ce43182eecb9f60c72393a788160d2c356bf5\_90_pmux for cells of type $pmux.
+Using template $paramod$85df5dc01c7df96a7d8e5f1fdf76ce9ac452af63\_90_pmux for cells of type $pmux.
+Using template $paramod$7e708ae28ab761f11d0fb59d3ffc72f6a4baf5d9\_90_alu for cells of type $alu.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$1a3a0c35c4a4896fbfd612699525c057298e72d2\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod$d1615bf4e5e328245ffd1550e5fe105901cda77b\_90_alu for cells of type $alu.
+  add \STAGE1.BUTTERFLY.sub_re [12:1] * { \STAGE1.BUTTERFLY.w_im [11] \STAGE1.BUTTERFLY.w_im [11] \STAGE1.BUTTERFLY.w_im [9:8] 1'0 \STAGE1.BUTTERFLY.w_im [6:5] \STAGE1.BUTTERFLY.w_im [9] \STAGE1.BUTTERFLY.w_im [3:2] \STAGE1.BUTTERFLY.w_im [8] \STAGE1.BUTTERFLY.w_im [0] } (12x12 bits, signed)
+  add \STAGE1.BUTTERFLY.sub_im [12:1] * { \STAGE1.BUTTERFLY.w_re [11:5] \STAGE1.BUTTERFLY.w_re [9] \STAGE1.BUTTERFLY.w_re [11] \STAGE1.BUTTERFLY.w_re [2] \STAGE1.BUTTERFLY.w_re [8] \STAGE1.BUTTERFLY.w_re [0] } (12x12 bits, signed)
+  add \STAGE1.BUTTERFLY.sub_re [12:1] * { \STAGE1.BUTTERFLY.w_re [11:5] \STAGE1.BUTTERFLY.w_re [9] \STAGE1.BUTTERFLY.w_re [11] \STAGE1.BUTTERFLY.w_re [2] \STAGE1.BUTTERFLY.w_re [8] \STAGE1.BUTTERFLY.w_re [0] } (12x12 bits, signed)
+  sub \STAGE1.BUTTERFLY.sub_im [12:1] * { \STAGE1.BUTTERFLY.w_im [11] \STAGE1.BUTTERFLY.w_im [11] \STAGE1.BUTTERFLY.w_im [9:8] 1'0 \STAGE1.BUTTERFLY.w_im [6:5] \STAGE1.BUTTERFLY.w_im [9] \STAGE1.BUTTERFLY.w_im [3:2] \STAGE1.BUTTERFLY.w_im [8] \STAGE1.BUTTERFLY.w_im [0] } (12x12 bits, signed)
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010110 for cells of type $fa.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod$e161c1674351796cd6dd381e70ff05458bfe7755\_90_alu for cells of type $alu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001101 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010101 for cells of type $fa.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000010110 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~4094 debug messages>
+
+31.22. Executing OPT pass (performing simple optimizations).
+
+31.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~12046 debug messages>
+
+31.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~5817 debug messages>
+Removed a total of 1939 cells.
+
+31.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 576 unused cells and 3714 unused wires.
+<suppressed ~577 debug messages>
+
+31.22.5. Finished fast OPT passes.
+
+31.23. Executing ABC pass (technology mapping using ABC).
+
+31.23.1. Extracting gate netlist of module `\DIF_R2SDF_top' to `<abc-temp-dir>/input.blif'..
+Extracted 9661 gates and 9809 wires to a netlist network with 146 inputs and 150 outputs.
+
+31.23.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+31.23.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:      156
+ABC RESULTS:            ANDNOT cells:     2908
+ABC RESULTS:               MUX cells:      211
+ABC RESULTS:              NAND cells:      160
+ABC RESULTS:               NOR cells:     1079
+ABC RESULTS:               NOT cells:      482
+ABC RESULTS:                OR cells:     1055
+ABC RESULTS:             ORNOT cells:      212
+ABC RESULTS:              XNOR cells:      890
+ABC RESULTS:               XOR cells:     2210
+ABC RESULTS:        internal signals:     9513
+ABC RESULTS:           input signals:      146
+ABC RESULTS:          output signals:      150
+Removing temp directory.
+
+31.24. Executing OPT pass (performing simple optimizations).
+
+31.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+<suppressed ~82 debug messages>
+
+31.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+<suppressed ~132 debug messages>
+Removed a total of 44 cells.
+
+31.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+31.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 2 unused cells and 1938 unused wires.
+<suppressed ~97 debug messages>
+
+31.24.5. Finished fast OPT passes.
+
+31.25. Executing HIERARCHY pass (managing design hierarchy).
+
+31.25.1. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+
+31.25.2. Analyzing design hierarchy..
+Top module:  \DIF_R2SDF_top
+Removed 0 unused modules.
+
+31.26. Printing statistics.
+
+=== DIF_R2SDF_top ===
+
+   Number of wires:               9460
+   Number of wire bits:          12013
+   Number of public wires:         271
+   Number of public wire bits:    2800
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9729
+     $_ANDNOT_                    2904
+     $_AND_                        153
+     $_DFFE_PN0N_                    4
+     $_DFFE_PN0P_                   40
+     $_DFF_PN0_                    368
+     $_MUX_                        209
+     $_NAND_                       160
+     $_NOR_                       1076
+     $_NOT_                        479
+     $_ORNOT_                      211
+     $_OR_                        1047
+     $_XNOR_                       885
+     $_XOR_                       2193
+
+31.27. Executing CHECK pass (checking for obvious problems).
+Checking module DIF_R2SDF_top...
+Found and reported 0 problems.
+
+32. Generating Graphviz representation of design.
+Writing dot description to `/home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/post_techmap.dot'.
+Dumping module DIF_R2SDF_top to page 1.
+
+33. Executing SHARE pass (SAT-based resource sharing).
+
+34. Executing OPT pass (performing simple optimizations).
+
+34.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+34.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+34.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \DIF_R2SDF_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+34.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \DIF_R2SDF_top.
+Performed a total of 0 changes.
+
+34.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\DIF_R2SDF_top'.
+Removed a total of 0 cells.
+
+34.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+34.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+
+34.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module DIF_R2SDF_top.
+
+34.9. Finished OPT passes. (There is nothing left to do.)
+
+35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 209 unused wires.
+<suppressed ~209 debug messages>
+
+36. Printing statistics.
+
+=== DIF_R2SDF_top ===
+
+   Number of wires:               9251
+   Number of wire bits:           9774
+   Number of public wires:          62
+   Number of public wire bits:     561
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9729
+     $_ANDNOT_                    2904
+     $_AND_                        153
+     $_DFFE_PN0N_                    4
+     $_DFFE_PN0P_                   40
+     $_DFF_PN0_                    368
+     $_MUX_                        209
+     $_NAND_                       160
+     $_NOR_                       1076
+     $_NOT_                        479
+     $_ORNOT_                      211
+     $_OR_                        1047
+     $_XNOR_                       885
+     $_XOR_                       2193
+
+mapping tbuf
+
+37. Executing TECHMAP pass (map to technology primitives).
+
+37.1. Executing Verilog-2005 frontend: /home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+37.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+39. Executing TECHMAP pass (map to technology primitives).
+
+39.1. Executing Verilog-2005 frontend: /home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+39.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+40. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+41. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+41.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\DIF_R2SDF_top':
+  mapped 412 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+
+42. Printing statistics.
+
+=== DIF_R2SDF_top ===
+
+   Number of wires:               9295
+   Number of wire bits:           9818
+   Number of public wires:          62
+   Number of public wire bits:     561
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9773
+     $_ANDNOT_                    2904
+     $_AND_                        153
+     $_MUX_                        253
+     $_NAND_                       160
+     $_NOR_                       1076
+     $_NOT_                        479
+     $_ORNOT_                      211
+     $_OR_                        1047
+     $_XNOR_                       885
+     $_XOR_                       2193
+     sky130_fd_sc_hd__dfrtp_2      412
+
+[INFO]: USING STRATEGY DELAY 1
+
+43. Executing ABC pass (technology mapping using ABC).
+
+43.1. Extracting gate netlist of module `\DIF_R2SDF_top' to `/tmp/yosys-abc-MVrxbo/input.blif'..
+Extracted 9361 gates and 9533 wires to a netlist network with 172 inputs and 171 outputs.
+
+43.1.1. Executing ABC.
+Running ABC command: /home/opentools/OpenLane/install/bin/yosys-abc -s -f /tmp/yosys-abc-MVrxbo/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-MVrxbo/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-MVrxbo/input.blif 
+ABC: + read_lib -w /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.04 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130A_merged" from "/home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Memory =    7.77 MB. Time =     0.05 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/synthesis.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
+ABC: Setting output load to be 33.442001.
+ABC: + read_constr /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/synthesis/synthesis.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 20000 -M 6 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map -p -B 0.2 -A 0.9 -M 0 
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + map 
+ABC: + 
+ABC: + retime -D -D 20000 
+ABC: + &get -n 
+ABC: + &st 
+ABC: + &dch 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer -N 5 -S 750.0 
+ABC: + upsize -D 20000 
+ABC: Current delay (6976.98 ps) does not exceed the target delay (20000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 20000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =  13091 ( 20.0 %)   Cap = 10.2 ff (  4.8 %)   Area =   113392.50 ( 80.0 %)   Delay =  7072.75 ps  (  3.2 %)               
+ABC: Path  0 --      34 : 0    2 pi                         A =   0.00  Df =  23.0  -13.1 ps  S =  37.5 ps  Cin =  0.0 ff  Cout =   6.6 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     378 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df = 225.5  -77.8 ps  S = 225.2 ps  Cin =  2.1 ff  Cout =  18.5 ff  Cmax = 130.0 ff  G =  844  
+ABC: Path  2 --    6650 : 4    3 sky130_fd_sc_hd__o22ai_2   A =  12.51  Df = 374.4  -20.3 ps  S = 221.9 ps  Cin =  4.3 ff  Cout =  13.8 ff  Cmax = 137.3 ff  G =  303  
+ABC: Path  3 --    6652 : 4    2 sky130_fd_sc_hd__o211ai_2  A =  12.51  Df = 576.7  -94.3 ps  S = 154.3 ps  Cin =  4.4 ff  Cout =   6.9 ff  Cmax = 133.7 ff  G =  151  
+ABC: Path  4 --    6653 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df = 840.4 -174.9 ps  S = 272.0 ps  Cin =  2.1 ff  Cout =  22.5 ff  Cmax = 130.0 ff  G = 1033  
+ABC: Path  5 --    6681 : 5    4 sky130_fd_sc_hd__a41oi_2   A =  16.27  Df =1063.7 -101.1 ps  S = 282.0 ps  Cin =  4.3 ff  Cout =  16.6 ff  Cmax = 124.5 ff  G =  357  
+ABC: Path  6 --    6689 : 4    3 sky130_fd_sc_hd__o31a_2    A =  10.01  Df =1426.9 -248.2 ps  S =  93.8 ps  Cin =  2.3 ff  Cout =  14.3 ff  Cmax = 285.7 ff  G =  574  
+ABC: Path  7 --    6694 : 3    2 sky130_fd_sc_hd__o21ai_2   A =   8.76  Df =1588.7 -319.2 ps  S = 124.4 ps  Cin =  4.5 ff  Cout =   6.7 ff  Cmax = 139.2 ff  G =  139  
+ABC: Path  8 --    6706 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =1836.4 -402.9 ps  S = 255.1 ps  Cin =  2.1 ff  Cout =  21.0 ff  Cmax = 130.0 ff  G =  963  
+ABC: Path  9 --    6736 : 4    5 sky130_fd_sc_hd__o211ai_2  A =  12.51  Df =2042.4 -232.6 ps  S = 297.2 ps  Cin =  4.4 ff  Cout =  20.5 ff  Cmax = 133.7 ff  G =  452  
+ABC: Path 10 --    6992 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =2225.1 -192.1 ps  S = 185.2 ps  Cin =  2.1 ff  Cout =  15.0 ff  Cmax = 130.0 ff  G =  687  
+ABC: Path 11 --    7111 : 4    4 sky130_fd_sc_hd__nand4_2   A =  12.51  Df =2329.5 -162.3 ps  S = 143.1 ps  Cin =  4.4 ff  Cout =  10.5 ff  Cmax = 200.5 ff  G =  233  
+ABC: Path 12 --    7119 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =2546.4 -189.9 ps  S = 218.3 ps  Cin =  2.1 ff  Cout =  17.9 ff  Cmax = 130.0 ff  G =  816  
+ABC: Path 13 --    7756 : 3    4 sky130_fd_sc_hd__nand3_2   A =  10.01  Df =2702.3  -50.3 ps  S = 126.1 ps  Cin =  4.4 ff  Cout =  16.7 ff  Cmax = 260.0 ff  G =  355  
+ABC: Path 14 --    7757 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =2886.6   -9.6 ps  S = 226.7 ps  Cin =  2.1 ff  Cout =  18.6 ff  Cmax = 130.0 ff  G =  838  
+ABC: Path 15 --    9747 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =3100.7  -48.7 ps  S = 199.0 ps  Cin =  2.1 ff  Cout =  16.2 ff  Cmax = 130.0 ff  G =  735  
+ABC: Path 16 --   10902 : 5    2 sky130_fd_sc_hd__o221ai_2  A =  15.01  Df =3239.4   -2.9 ps  S = 203.8 ps  Cin =  4.5 ff  Cout =   8.9 ff  Cmax = 128.2 ff  G =  193  
+ABC: Path 17 --   10909 : 5    5 sky130_fd_sc_hd__o2111ai_2 A =  15.01  Df =3441.4  -67.0 ps  S = 305.8 ps  Cin =  4.3 ff  Cout =  18.2 ff  Cmax = 129.1 ff  G =  403  
+ABC: Path 18 --   10910 : 3    4 sky130_fd_sc_hd__and3_2    A =   7.51  Df =3746.6  -94.6 ps  S =  99.9 ps  Cin =  1.5 ff  Cout =  14.8 ff  Cmax = 309.5 ff  G =  946  
+ABC: Path 19 --   10912 : 4    5 sky130_fd_sc_hd__a211o_2   A =  10.01  Df =4105.9 -270.0 ps  S =  99.6 ps  Cin =  2.4 ff  Cout =  18.4 ff  Cmax = 325.0 ff  G =  756  
+ABC: Path 20 --   10915 : 5    2 sky130_fd_sc_hd__a32o_2    A =  11.26  Df =4354.1 -167.9 ps  S =  78.4 ps  Cin =  2.3 ff  Cout =   9.0 ff  Cmax = 264.6 ff  G =  374  
+ABC: Path 21 --   10921 : 2    3 sky130_fd_sc_hd__nand2_2   A =   6.26  Df =4434.8 -165.0 ps  S =  78.4 ps  Cin =  4.4 ff  Cout =  11.0 ff  Cmax = 295.7 ff  G =  238  
+ABC: Path 22 --   10924 : 3    2 sky130_fd_sc_hd__o21bai_2  A =  11.26  Df =4568.0  -94.5 ps  S = 150.9 ps  Cin =  3.4 ff  Cout =   8.9 ff  Cmax = 140.1 ff  G =  256  
+ABC: Path 23 --   10930 : 3    2 sky130_fd_sc_hd__nand3_2   A =  10.01  Df =4647.9 -105.2 ps  S =  64.4 ps  Cin =  4.4 ff  Cout =   4.6 ff  Cmax = 260.0 ff  G =   99  
+ABC: Path 24 --   10931 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =4816.0  -44.5 ps  S = 251.9 ps  Cin =  2.1 ff  Cout =  20.8 ff  Cmax = 130.0 ff  G =  953  
+ABC: Path 25 --   10937 : 3    2 sky130_fd_sc_hd__nand3_2   A =  10.01  Df =4934.3  -28.6 ps  S = 100.5 ps  Cin =  4.4 ff  Cout =   9.8 ff  Cmax = 260.0 ff  G =  209  
+ABC: Path 26 --   10938 : 3    2 sky130_fd_sc_hd__nand3_2   A =  10.01  Df =5010.4   -9.7 ps  S =  58.5 ps  Cin =  4.4 ff  Cout =   4.7 ff  Cmax = 260.0 ff  G =  100  
+ABC: Path 27 --   10942 : 1    5 sky130_fd_sc_hd__buf_1     A =   3.75  Df =5211.9  -47.1 ps  S = 227.1 ps  Cin =  2.1 ff  Cout =  18.6 ff  Cmax = 130.0 ff  G =  852  
+ABC: Path 28 --   10949 : 3    1 sky130_fd_sc_hd__a21o_2    A =   8.76  Df =5397.2  -17.3 ps  S =  40.4 ps  Cin =  2.4 ff  Cout =   4.5 ff  Cmax = 309.5 ff  G =  184  
+ABC: Path 29 --   10951 : 4    4 sky130_fd_sc_hd__a31oi_2   A =  12.51  Df =5643.2 -147.7 ps  S = 251.0 ps  Cin =  4.4 ff  Cout =  14.1 ff  Cmax = 118.1 ff  G =  305  
+ABC: Path 30 --   11234 : 4    3 sky130_fd_sc_hd__o22a_2    A =  10.01  Df =5873.1 -126.6 ps  S =  75.9 ps  Cin =  2.4 ff  Cout =  11.9 ff  Cmax = 304.9 ff  G =  486  
+ABC: Path 31 --   11709 : 3    1 sky130_fd_sc_hd__nand3_2   A =  10.01  Df =5934.3 -123.6 ps  S =  53.6 ps  Cin =  4.4 ff  Cout =   4.6 ff  Cmax = 260.0 ff  G =   96  
+ABC: Path 32 --   11710 : 4    4 sky130_fd_sc_hd__a22oi_2   A =  12.51  Df =6161.0 -263.6 ps  S = 244.3 ps  Cin =  4.3 ff  Cout =  14.1 ff  Cmax = 170.3 ff  G =  313  
+ABC: Path 33 --   11997 : 4    3 sky130_fd_sc_hd__nand4_2   A =  12.51  Df =6298.4 -133.6 ps  S = 121.8 ps  Cin =  4.4 ff  Cout =   8.6 ff  Cmax = 200.5 ff  G =  190  
+ABC: Path 34 --   12068 : 3    1 sky130_fd_sc_hd__and3_2    A =   7.51  Df =6525.4 -175.7 ps  S =  53.2 ps  Cin =  1.5 ff  Cout =   4.7 ff  Cmax = 309.5 ff  G =  290  
+ABC: Path 35 --   12070 : 4    1 sky130_fd_sc_hd__o31ai_2   A =  12.51  Df =7072.8 -392.5 ps  S = 679.3 ps  Cin =  4.4 ff  Cout =  33.4 ff  Cmax =  80.6 ff  G =  762  
+ABC: Start-point = pi33 (\STAGE1.BUTTERFLY.b_re [1]).  End-point = po50 (\STAGE2.SR4.din_im [10]).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o =  172/  171  lat =    0  nd = 13091  edge =  36965  area =46105.69  delay =5336.72  lev = 45
+ABC: + write_blif /tmp/yosys-abc-MVrxbo/output.blif 
+
+43.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a2111o_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:      116
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:       30
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:      112
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:      115
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:      538
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:      759
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:       46
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_2 cells:       16
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:      149
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:      115
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:       67
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:       44
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:      287
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:      132
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:      138
+ABC RESULTS:   sky130_fd_sc_hd__a32oi_2 cells:       27
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__a41oi_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:      125
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:       34
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:      460
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:       91
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:     2387
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:      227
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:       68
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:     1092
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:      945
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:      139
+ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:      342
+ABC RESULTS:   sky130_fd_sc_hd__nand4b_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:      405
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:       53
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:       20
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_2 cells:       25
+ABC RESULTS:   sky130_fd_sc_hd__o2111ai_2 cells:      201
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:      192
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:      642
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:      182
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:      870
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:      101
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:       87
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_2 cells:      113
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:       88
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:      171
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:       65
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_2 cells:      216
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:       87
+ABC RESULTS:   sky130_fd_sc_hd__o311ai_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:      128
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:       30
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:       80
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__o41ai_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       97
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:       43
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:       80
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:       27
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:       80
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__or4bb_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       97
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:      100
+ABC RESULTS:        internal signals:     9190
+ABC RESULTS:           input signals:      172
+ABC RESULTS:          output signals:      171
+Removing temp directory.
+
+44. Executing SETUNDEF pass (replace undef values with defined constants).
+
+45. Executing HILOMAP pass (mapping to constant drivers).
+
+46. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+47. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \DIF_R2SDF_top..
+Removed 0 unused cells and 9551 unused wires.
+<suppressed ~3 debug messages>
+
+48. Executing INSBUF pass (insert buffer cells for connected wires).
+
+49. Executing CHECK pass (checking for obvious problems).
+Checking module DIF_R2SDF_top...
+Warning: Wire DIF_R2SDF_top.\out_valid is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [11] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [10] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [9] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [8] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [7] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [6] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [5] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [4] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [3] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [2] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [1] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_re [0] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [11] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [10] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [9] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [8] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [7] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [6] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [5] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [4] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [3] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [2] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [1] is used but has no driver.
+Warning: Wire DIF_R2SDF_top.\dout_im [0] is used but has no driver.
+Found and reported 25 problems.
+
+50. Printing statistics.
+
+=== DIF_R2SDF_top ===
+
+   Number of wires:              13486
+   Number of wire bits:          13530
+   Number of public wires:         515
+   Number of public wire bits:     559
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13503
+     sky130_fd_sc_hd__a2111o_2       5
+     sky130_fd_sc_hd__a2111oi_2      5
+     sky130_fd_sc_hd__a211o_2      116
+     sky130_fd_sc_hd__a211oi_2      30
+     sky130_fd_sc_hd__a21bo_2      112
+     sky130_fd_sc_hd__a21boi_2     115
+     sky130_fd_sc_hd__a21o_2       538
+     sky130_fd_sc_hd__a21oi_2      759
+     sky130_fd_sc_hd__a221o_2       46
+     sky130_fd_sc_hd__a221oi_2      16
+     sky130_fd_sc_hd__a22o_2       149
+     sky130_fd_sc_hd__a22oi_2      115
+     sky130_fd_sc_hd__a2bb2o_2      67
+     sky130_fd_sc_hd__a2bb2oi_2     44
+     sky130_fd_sc_hd__a311o_2       22
+     sky130_fd_sc_hd__a311oi_2      13
+     sky130_fd_sc_hd__a31o_2       287
+     sky130_fd_sc_hd__a31oi_2      132
+     sky130_fd_sc_hd__a32o_2       138
+     sky130_fd_sc_hd__a32oi_2       27
+     sky130_fd_sc_hd__a41o_2        22
+     sky130_fd_sc_hd__a41oi_2        9
+     sky130_fd_sc_hd__and2_2       125
+     sky130_fd_sc_hd__and2b_2       34
+     sky130_fd_sc_hd__and3_2       460
+     sky130_fd_sc_hd__and3b_2       11
+     sky130_fd_sc_hd__and4_2        91
+     sky130_fd_sc_hd__and4b_2       13
+     sky130_fd_sc_hd__and4bb_2       2
+     sky130_fd_sc_hd__buf_1       2387
+     sky130_fd_sc_hd__dfrtp_2      412
+     sky130_fd_sc_hd__inv_2        227
+     sky130_fd_sc_hd__mux2_2        68
+     sky130_fd_sc_hd__nand2_2     1092
+     sky130_fd_sc_hd__nand2b_2       2
+     sky130_fd_sc_hd__nand3_2      945
+     sky130_fd_sc_hd__nand3b_2     139
+     sky130_fd_sc_hd__nand4_2      342
+     sky130_fd_sc_hd__nand4b_2      17
+     sky130_fd_sc_hd__nor2_2       405
+     sky130_fd_sc_hd__nor2b_2        4
+     sky130_fd_sc_hd__nor3_2        53
+     sky130_fd_sc_hd__nor3b_2       11
+     sky130_fd_sc_hd__nor4_2        20
+     sky130_fd_sc_hd__o2111a_2      25
+     sky130_fd_sc_hd__o2111ai_2    201
+     sky130_fd_sc_hd__o211a_2      192
+     sky130_fd_sc_hd__o211ai_2     642
+     sky130_fd_sc_hd__o21a_2       182
+     sky130_fd_sc_hd__o21ai_2      870
+     sky130_fd_sc_hd__o21ba_2       22
+     sky130_fd_sc_hd__o21bai_2     101
+     sky130_fd_sc_hd__o221a_2       87
+     sky130_fd_sc_hd__o221ai_2     113
+     sky130_fd_sc_hd__o22a_2        88
+     sky130_fd_sc_hd__o22ai_2      171
+     sky130_fd_sc_hd__o2bb2a_2      65
+     sky130_fd_sc_hd__o2bb2ai_2    216
+     sky130_fd_sc_hd__o311a_2       87
+     sky130_fd_sc_hd__o311ai_2       7
+     sky130_fd_sc_hd__o31a_2       128
+     sky130_fd_sc_hd__o31ai_2       30
+     sky130_fd_sc_hd__o32a_2        80
+     sky130_fd_sc_hd__o32ai_2        7
+     sky130_fd_sc_hd__o41a_2        18
+     sky130_fd_sc_hd__o41ai_2        6
+     sky130_fd_sc_hd__or2_2         97
+     sky130_fd_sc_hd__or2b_2        43
+     sky130_fd_sc_hd__or3_2         80
+     sky130_fd_sc_hd__or3b_2        27
+     sky130_fd_sc_hd__or4_2         80
+     sky130_fd_sc_hd__or4b_2        11
+     sky130_fd_sc_hd__or4bb_2        3
+     sky130_fd_sc_hd__xnor2_2       97
+     sky130_fd_sc_hd__xor2_2       100
+
+   Chip area for module '\DIF_R2SDF_top': 124217.884800
+
+51. Executing Verilog backend.
+Dumping module `\DIF_R2SDF_top'.
+
+Warnings: 31 unique messages, 37 total
+End of script. Logfile hash: 27508bce10, CPU: user 5.60s system 0.13s, MEM: 93.20 MB peak
+Yosys 0.12+45 (git sha1 cfe940a98, gcc 11.2.0-19ubuntu1 -fPIC -Os)
+Time spent: 82% 2x abc (25 sec), 5% 34x opt_expr (1 sec), ...

@@ -1,0 +1,33 @@
+OpenROAD v2.0-4194-g9d55eaa0c 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.max.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/opentools/OpenLane/designs/fft/runs/opttime1/tmp/merged.max.lef
+[INFO ODB-0127] Reading DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.def
+[INFO ODB-0128] Design: DIF_R2SDF_top
+[INFO ODB-0130]     Created 54 pins.
+[INFO ODB-0131]     Created 62585 components and 288144 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 236246 connections.
+[INFO ODB-0133]     Created 13627 nets and 51898 connections.
+[INFO ODB-0134] Finished DEF file: /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.def
+Using RCX ruleset '/home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.spef_extractor'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of DIF_R2SDF_top ...
+[INFO RCX-0435] Reading extraction model file /home/opentools/OpenLane/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.spef_extractor ...
+[INFO RCX-0436] RC segment generation DIF_R2SDF_top (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 86601 rc segments
+[INFO RCX-0439] Coupling Cap extraction DIF_R2SDF_top ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 127450 wires to be extracted
+[INFO RCX-0442] 49% completion -- 63187 wires have been extracted
+[INFO RCX-0442] 100% completion -- 127450 wires have been extracted
+[INFO RCX-0045] Extract 13627 nets, 100227 rsegs, 100227 caps, 133041 ccs
+[INFO RCX-0015] Finished extracting DIF_R2SDF_top.
+Writing result to /home/opentools/OpenLane/designs/fft/runs/opttime1/results/routing/DIF_R2SDF_top.max.spef...
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 13627 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
